@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+
+<!-- CAUTION, if preferences.xml isn't with 6 views, update below :
+
+     - cycle keys "v" and "V".
+     - seats keys "Ctrl-E", "Ctrl-J", "Ctrl-O".
+     - eventually "Ctrl-V".
+-->
+
+
+<PropertyList>
+
+   <key n="69">
+    <name>E</name>
+    <desc>Decrease propeller pitch</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[2]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[3]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[4]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[5]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[6]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[7]/propeller-pitch</property>
+     <step type="double">-0.05</step>
+    </binding>
+   </key>
+
+   <key n="101">
+    <name>e</name>
+    <desc>Increase propeller pitch</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[0]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[1]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[2]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[3]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[4]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[5]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+     <property>/controls/engines/engine[6]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+    <binding>
+     <command>property-adjust</command>
+    7 <property>/controls/engines/engine[7]/propeller-pitch</property>
+     <step type="double">0.05</step>
+    </binding>
+   </key>
+
+   <key n="113">
+    <name>q</name>
+    <desc>reset speed-up.</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/speed-up</property>
+     <value>1</value>
+    </binding>
+   </key>
+   
+<!--
+   <key n="68">
+     <name>D</name>
+     <desc>Passenger door</desc>
+     <binding>
+       <command>nasal</command>
+       <script>globals.H4-Hercules.doorsystem.passengerexport();</script>
+     </binding>
+   </key>
+
+   <key n="100">
+     <name>d</name>
+     <desc>Crew door</desc>
+     <binding>
+       <command>nasal</command>
+       <script>globals.H4-Hercules.doorsystem.crewexport();</script>
+     </binding>
+   </key>
+-->
+
+<!-- Engineer Seat -->
+
+   <key n="5">
+    <name>Ctrl-E</name>
+    <desc>Toggle engineer/captain view</desc>
+
+    <!-- engineer seat -->
+
+    <binding>
+     <condition>
+      <not>
+       <property>/sim/current-view/seat/engineer</property>
+      </not>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">6</value>
+    </binding>
+
+    <!--captain seat -->
+
+    <binding>
+     <condition>
+      <property>/sim/current-view/seat/engineer</property>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">0</value>
+    </binding>
+
+    <binding>
+     <command>property-toggle</command>
+     <property>/sim/current-view/seat/engineer</property>
+    </binding>
+
+    <binding>
+     <condition>
+      <and>
+       <not>
+        <property>/sim/current-view/seat/radio</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/copilot</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/star</property>
+       </not>
+      </and>
+     </condition>
+     <command>property-toggle</command>
+     <property>/sim/current-view/captain-seat</property>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/radio</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/copilot</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/star</property>
+     <value type="bool">false</value>
+    </binding>
+   </key>
+
+   <key n="1">
+    <name>Ctrl-A</name>
+    <desc>Toggle autopilot altitude lock.</desc>
+    <binding>
+     <command>nasal</command>
+     <script>globals.Boeing314.autopilotsystem.apaltitudeexport();</script>
+    </binding>
+   </key>
+
+   <key n="8">
+    <name>Ctrl-H</name>
+    <desc>Toggle autopilot heading lock.</desc>
+    <binding>
+     <command>nasal</command>
+     <script>globals.Boeing314.autopilotsystem.apheadingexport();</script>
+    </binding>
+   </key>
+
+<!-- Copilot Seat -->
+
+   <key n="10">
+    <name>Ctrl-J</name>
+    <desc>Toggle copilot view.</desc>
+
+    <!-- copilot seat -->
+
+    <binding>
+     <condition>
+      <not>
+       <property>/sim/current-view/seat/copilot</property>
+      </not>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">8</value>
+    </binding>
+
+    <!--captain seat -->
+
+    <binding>
+     <condition>
+      <property>/sim/current-view/seat/copilot</property>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">0</value>
+    </binding>
+
+    <binding>
+     <command>property-toggle</command>
+     <property>/sim/current-view/seat/copilot</property>
+    </binding>
+
+    <binding>
+     <condition>
+      <and>
+       <not>
+        <property>/sim/current-view/seat/engineer</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/radio</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/star</property>
+       </not>
+      </and>
+     </condition>
+     <command>property-toggle</command>
+     <property>/sim/current-view/captain-seat</property>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/engineer</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/radio</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/star</property>
+     <value type="bool">false</value>
+    </binding>
+   </key>
+
+<!-- Star Seat -->
+
+   <key n="11">
+    <name>Ctrl-K</name>
+    <desc>Toggle star view.</desc>
+
+    <!-- star seat -->
+
+    <binding>
+     <condition>
+      <not>
+       <property>/sim/current-view/seat/star</property>
+      </not>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">9</value>
+    </binding>
+
+    <!--captain seat -->
+
+    <binding>
+     <condition>
+      <property>/sim/current-view/seat/star</property>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">0</value>
+    </binding>
+
+    <binding>
+     <command>property-toggle</command>
+     <property>/sim/current-view/seat/star</property>
+    </binding>
+
+    <binding>
+     <condition>
+      <and>
+       <not>
+        <property>/sim/current-view/seat/engineer</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/radio</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/copilot</property>
+       </not>
+      </and>
+     </condition>
+     <command>property-toggle</command>
+     <property>/sim/current-view/captain-seat</property>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/copilot</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/engineer</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/radio</property>
+     <value type="bool">false</value>
+    </binding>
+   </key>
+
+<!-- Radio Seat -->
+
+   <key n="15">
+    <name>Ctrl-O</name>
+    <desc>Toggle radio view.</desc>
+
+    <!-- radio seat -->
+
+    <binding>
+     <condition>
+      <not>
+       <property>/sim/current-view/seat/radio</property>
+      </not>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">7</value>
+    </binding>
+
+    <!--captain seat -->
+
+    <binding>
+     <condition>
+      <property>/sim/current-view/seat/radio</property>
+     </condition>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">0</value>
+    </binding>
+
+    <binding>
+     <command>property-toggle</command>
+     <property>/sim/current-view/seat/radio</property>
+    </binding>
+
+    <binding>
+     <condition>
+      <and>
+       <not>
+        <property>/sim/current-view/seat/engineer</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/copilot</property>
+       </not>
+       <not>
+        <property>/sim/current-view/seat/star</property>
+       </not>
+      </and>
+     </condition>
+     <command>property-toggle</command>
+     <property>/sim/current-view/captain-seat</property>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/engineer</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/copilot</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/star</property>
+     <value type="bool">false</value>
+    </binding>
+   </key>
+
+   <key n="16">
+    <name>Ctrl-P</name>
+    <desc>Toggle pitch hold.</desc>
+    <binding>
+     <command>nasal</command>
+     <script>globals.Boeing314.autopilotsystem.appitchexport();</script>
+    </binding>
+   </key>
+
+   <key n="19">
+    <name>Ctrl-S</name>
+    <desc>Toggle auto-throttle lock.</desc>
+    <binding>
+     <command>nasal</command>
+     <script>globals.Boeing314.autopilotsystem.atexport();</script>
+    </binding>
+   </key>
+
+<!-- Views -->
+
+   <key n="22">
+    <name>Ctrl-V</name>
+    <desc>Select initial view (view 0).</desc>
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/view-number</property>
+     <value type="int">0</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/engineer</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/radio</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/copilot</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/seat/star</property>
+     <value type="bool">false</value>
+    </binding>
+
+    <binding>
+     <command>property-assign</command>
+     <property>/sim/current-view/captain-seat</property>
+     <value type="bool">true</value>
+    </binding>
+   </key>
+
+   <key n="86">
+    <name>V</name>
+    <desc>Scroll in reverse through views.</desc>
+    <binding>
+     <command>nasal</command>
+     <script>
+       # if specific view, step once more to ignore captain view 
+       if( getprop("/sim/current-view/seat/engineer") ) {
+           if( getprop("/sim/current-view/view-number") == 1 ) {
+               view.stepView(-2);
+               view.stepView(-2);
+           }
+       }
+       elsif( getprop("/sim/current-view/seat/radio") ) {
+           if( getprop("/sim/current-view/view-number") == 1 ) {
+               view.stepView(-3);
+           }
+           elsif( getprop("/sim/current-view/view-number") == 7 ) {
+               view.stepView(-1);
+           }
+       }
+       elsif( getprop("/sim/current-view/seat/copilot") ) {
+           if( getprop("/sim/current-view/view-number") == 1 ) {
+               view.stepView(-2);
+           }
+           elsif( getprop("/sim/current-view/view-number") == 8 ) {
+               view.stepView(-2);
+           }
+       }
+       elsif( getprop("/sim/current-view/seat/star") ) {
+           if( getprop("/sim/current-view/view-number") == 1 ) {
+               view.stepView(-1);
+           }
+           elsif( getprop("/sim/current-view/view-number") == 9 ) {
+               view.stepView(-3);
+           }
+       }
+       else {
+           if( getprop("/sim/current-view/view-number") == 0 ) {
+               view.stepView(-1);
+               view.stepView(-3);
+           }
+       }
+       # default
+       view.stepView(-1);
+     </script>
+    </binding>
+   </key>
+
+   <key n="118">
+    <name>v</name>
+    <desc>Cycle view</desc>
+    <desc>Scroll through views.</desc>
+    <binding>
+     <command>nasal</command>
+     <script>
+       # if specific view, step once more to ignore captain view 
+       if( getprop("/sim/current-view/seat/engineer") ) {
+           if( getprop("/sim/current-view/view-number") == 6 ) {
+               view.stepView(4);
+           }
+       }
+       elsif( getprop("/sim/current-view/seat/radio") ) {
+           if( getprop("/sim/current-view/view-number") == 5 ) {
+               view.stepView(1);
+           }
+           elsif( getprop("/sim/current-view/view-number") == 7 ) {
+               view.stepView(3);
+           }
+       }
+       elsif( getprop("/sim/current-view/seat/copilot") ) {
+           if( getprop("/sim/current-view/view-number") == 5 ) {
+               view.stepView(2);
+           }
+           elsif( getprop("/sim/current-view/view-number") == 8 ) {
+               view.stepView(2);
+           }
+       }
+       elsif( getprop("/sim/current-view/seat/star") ) {
+           if( getprop("/sim/current-view/view-number") == 5 ) {
+               view.stepView(3);
+           }
+           elsif( getprop("/sim/current-view/view-number") == 9 ) {
+               view.stepView(1);
+           }
+       }
+       else {
+           if( getprop("/sim/current-view/view-number") == 5 ) {
+               view.stepView(4);
+           }
+       }
+       # default
+       view.stepView(1);
+     </script>
+    </binding>
+   </key>
+
+<!-- autopilot adjust (overrides default) -->
+
+   <key n="357">
+    <name>Up</name>
+    <desc>Increase elevator or autopilot pitch.</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>
+       altitudemode = getprop("/autopilot/locks/altitude");
+       if( altitudemode != nil and altitudemode != "" ) {
+           globals.Boeing314.autopilotsystem.pitchexport(5.0);
+       }
+       # default
+       else {
+           controls.incElevator(0.05, -100);
+       }
+     </script>
+    </binding>
+   </key>
+
+   <key n="359">
+    <name>Down</name>
+    <desc>Decrease elevator or autopilot pitch.</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>
+       altitudemode = getprop("/autopilot/locks/altitude");
+       if( altitudemode != nil and altitudemode != "" ) {
+           globals.Boeing314.autopilotsystem.pitchexport(-5.0);
+       }
+       # default
+       else {
+           controls.incElevator(-0.05, 100);
+       }
+     </script>
+    </binding>
+   </key>
+
+   <key n="362">
+    <name>Home</name>
+    <desc>Increase elevator trim or autopilot pitch (slow)</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>
+       altitudemode = getprop("/autopilot/locks/altitude");
+       if( altitudemode != nil and altitudemode != "" ) {
+           globals.Boeing314.autopilotsystem.pitchexport(1.0);
+       }
+       # default
+       else {
+           trim = getprop("/controls/flight/elevator-trim");
+           trim = trim + 0.001;
+           setprop("/controls/flight/elevator-trim",trim);
+       }
+     </script>
+    </binding>
+   </key>
+
+   <key n="363">
+    <name>End</name>
+    <desc>Decrease elevator trim or autopilot pitch (slow)</desc>
+    <repeatable type="bool">true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>
+       altitudemode = getprop("/autopilot/locks/altitude");
+       if( altitudemode != nil and altitudemode != "" ) {
+           globals.Boeing314.autopilotsystem.pitchexport(-1.0);
+       }
+       # default
+       else {
+           trim = getprop("/controls/flight/elevator-trim");
+           trim = trim - 0.001;
+           setprop("/controls/flight/elevator-trim",trim);
+       }
+     </script>
+    </binding>
+   </key>
+
+</PropertyList>

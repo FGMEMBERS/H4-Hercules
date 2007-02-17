@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<PropertyList>
+
+  <name>Moteurs moins</name>
+  <background>transparency.rgb</background>
+  <w> 100 </w>
+  <h> 100 </h>
+
+  <instruments>
+    <instrument>
+      <name>Moteurs moins</name>
+       <x>  50 </x>
+       <y>  50 </y>
+       <w> 100 </w>
+       <h> 100 </h>
+       <w-base> 100 </w-base>
+       <h-base> 100 </h-base>
+
+       <actions>  
+         <action>
+           <name>Diminue moteurs</name>
+           <button> 0 </button>
+           <x> -50 </x>
+           <y> -50 </y>
+           <w> 100 </w>
+           <h> 100 </h>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[0]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[1]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[2]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[3]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[4]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[5]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[6]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[7]/throttle</property>
+             <step> -0.05 </step>
+             <min>   0.00 </min>
+             <max>   1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+        </action>
+     </actions>
+   </instrument>
+ </instruments>
+</PropertyList>

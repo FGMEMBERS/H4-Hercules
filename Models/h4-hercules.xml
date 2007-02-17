@@ -1,0 +1,1998 @@
+<?xml version="1.0"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+ <path>h4-hercules.ac</path>
+
+ <offsets>
+
+<!-- match the center of gravity of FDM -->
+  <x-m>  0.0 </x-m>
+  <y-m>  0.0 </y-m>
+  <z-m> -2.0 </z-m>
+
+<!-- makes the wheels touch the ground, when changes center of gravity.
+     When changing this value, also adjust the seat to keep the 2D instruments.
+  <z-m>-2.1</z-m> -->
+
+ </offsets>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Instruments-3d/h4-panel-pilot.xml</path>
+ </model>
+ 
+ <model>
+   <path>Aircraft/H4-Hercules/Instruments-3d/h4-panel-copilot.xml</path>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Instruments-3d/h4-panel-engineer.xml</path>
+ </model>
+
+ <!-- Les différents instruments du tableau de bord coté pilote -->
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.358 </y-m>
+     <z-m>   5.961 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.559 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.559 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.559 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/attitude/attitude.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.259 </y-m>
+     <z-m>   5.961 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Altimeter/altimetre.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.509 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/attitude/attitude.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.409 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/AirSpeed/vitesse.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.459 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/compas/compas.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.559 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/flaps/flaps.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.649 </y-m>
+     <z-m>   6.081 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Clock/clock.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.309 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/hdg/hdg-gauge.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.309 </y-m>
+     <z-m>   5.961 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/vsi/vsi.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>  -0.509 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <!-- Les différents instruments du tableau de bord coté copilote -->
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.559 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.559 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/turn/turn.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.559 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Altimeter/altimetre.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.509 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/attitude/attitude.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.409 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/AirSpeed/vitesse.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.459 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/compas/compas.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.559 </y-m>
+     <z-m>   6.091 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/flaps/flaps.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.649 </y-m>
+     <z-m>   6.081 </z-m>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/vsi/vsi.xml</path>
+   <offsets>
+     <x-m> -14.369 </x-m>
+     <y-m>   0.509 </y-m>
+     <z-m>   6.041 </z-m>
+   </offsets>
+ </model>
+
+<!-- Panneau des moteurs -->
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter1.xml</path>
+   <offsets>
+     <x-m> -12.376 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter2.xml</path>
+   <offsets>
+     <x-m> -12.292 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter3.xml</path>
+   <offsets>
+     <x-m> -12.207 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter4.xml</path>
+   <offsets>
+     <x-m> -12.123 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter5.xml</path>
+   <offsets>
+     <x-m> -12.039 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter6.xml</path>
+   <offsets>
+     <x-m> -11.954 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter7.xml</path>
+   <offsets>
+     <x-m> -11.870 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/Tachimeter/tachimeter8.xml</path>
+   <offsets>
+     <x-m> -11.785 </x-m>
+     <y-m>   1.690 </y-m>
+     <z-m>   5.249 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre1.xml</path>
+   <offsets>
+     <x-m> -12.376 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre2.xml</path>
+   <offsets>
+     <x-m> -12.292 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre3.xml</path>
+   <offsets>
+     <x-m> -12.207 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre4.xml</path>
+   <offsets>
+     <x-m> -12.123 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre5.xml</path>
+   <offsets>
+     <x-m> -12.039 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre6.xml</path>
+   <offsets>
+     <x-m> -11.954 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre7.xml</path>
+   <offsets>
+     <x-m> -11.870 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+ <model>
+   <path>Aircraft/H4-Hercules/Models/Instruments/manometre/manometre8.xml</path>
+   <offsets>
+     <x-m> -11.785 </x-m>
+     <y-m>   1.680 </y-m>
+     <z-m>   5.320 </z-m>
+     <roll-deg>      8.450 </roll-deg>
+     <pitch-deg>     0.000 </pitch-deg>
+     <heading-deg> -90.000 </heading-deg>
+   </offsets>
+ </model>
+
+<!-- Animations des hélices -->
+
+<!-- Sélection/déselection en fonction des rpm moteurs -->
+<!-- On sélectionne le disque si rpm supérieur ou égale 900 -->
+ <animation>
+   <type>select</type> 
+   <object-name>disque-D1</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[0]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-D2</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[1]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-D3</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[2]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-D4</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[3]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-G1</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[4]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-G2</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[5]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-G3</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[6]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>disque-G4</object-name>
+   <condition>
+     <greater-than>
+       <property>/engines/engine[7]/rpm</property>
+       <value>1750</value>
+     </greater-than>
+   </condition>
+ </animation>
+
+<!-- On sélectionne l'hélice si rpm inférieur à 1000 -->
+ <animation>
+   <type>select</type>
+   <object-name>helice-D1</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[0]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-D2</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[1]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-D3</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[2]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-D4</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[3]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-G1</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[4]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-G2</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[5]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-G3</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[6]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+
+ <animation>
+   <type>select</type>
+   <object-name>helice-G4</object-name>
+   <condition>
+     <less-than>
+       <property>/engines/engine[7]/rpm</property>
+       <value>1800</value>
+    </less-than>
+   </condition>
+ </animation>
+ 
+<!-- Moteur droit d'extrémitée 1 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-D1</object-name>
+   <property>/engines/engine[0]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m> -9.509 </x-m>
+     <y-m> 26.156 </y-m>
+     <z-m>  6.773 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-D1</object-name>
+   <property>/engines/engine[0]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>helice-D1</object-name>
+   <property>/engines/engine[0]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m> -9.577 </x-m>
+     <y-m> 26.156 </y-m>
+     <z-m>  6.773 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-D1</object-name>
+   <property>/engines/engine[0]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m> -9.945 </x-m>
+     <y-m> 26.156 </y-m>
+     <z-m>  6.773 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur droit intérieur droit 2 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-D2</object-name>
+   <property>/engines/engine[1]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>-10.362 </x-m>
+     <y-m> 19.944 </y-m>
+     <z-m>  6.439 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-D2</object-name>
+   <property>/engines/engine[1]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>helice-D2</object-name>
+   <property>/engines/engine[1]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-10.429 </x-m>
+     <y-m> 19.944 </y-m>
+     <z-m>  6.439 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-D2</object-name>
+   <property>/engines/engine[1]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-10.797 </x-m>
+     <y-m> 19.944 </y-m>
+     <z-m>  6.439 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur droit intérieur gauche 3 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-D3</object-name>
+   <property>/engines/engine[2]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>-10.900 </x-m>
+     <y-m> 13.786 </y-m>
+     <z-m>  5.906 </z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-D3</object-name>
+   <property>/engines/engine[2]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>helice-D3</object-name>
+   <property>/engines/engine[2]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-10.932 </x-m>
+     <y-m> 13.786 </y-m>
+     <z-m>  5.906 </z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-D3</object-name>
+   <property>/engines/engine[2]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-11.300 </x-m>
+     <y-m> 13.786 </y-m>
+     <z-m>  5.906 </z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur droit intérieur 4 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-D4</object-name>
+   <property>/engines/engine[3]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>-11.728 </x-m>
+     <y-m>  7.533 </y-m>
+     <z-m>  5.421 </z-m>
+   </center>
+   <axis>
+     <x>-1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-D4</object-name>
+   <property>/engines/engine[3]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>helice-D4</object-name>
+   <property>/engines/engine[3]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-11.745 </x-m>
+     <y-m>  7.533 </y-m>
+     <z-m>  5.421 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-D4</object-name>
+   <property>/engines/engine[3]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-12.113 </x-m>
+     <y-m>  7.533 </y-m>
+     <z-m>  5.421 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur gauche d'extrémitée 5 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-G1</object-name>
+   <property>/engines/engine[4]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>  -9.509 </x-m>
+     <y-m> -26.156 </y-m>
+     <z-m>   6.773 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-G1</object-name>
+   <property>/engines/engine[4]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>helice-G1</object-name>
+   <property>/engines/engine[4]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>  -9.577 </x-m>
+     <y-m> -26.156 </y-m>
+     <z-m>   6.773 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-G1</object-name>
+   <property>/engines/engine[4]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>  -9.945 </x-m>
+     <y-m> -26.156 </y-m>
+     <z-m>   6.773 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur gauche intérieur gauche 6 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-G2</object-name>
+   <property>/engines/engine[5]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>-10.362 </x-m>
+     <y-m>-19.944 </y-m>
+     <z-m>  6.439 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-G2</object-name>
+   <property>/engines/engine[5]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>helice-G2</object-name>
+   <property>/engines/engine[5]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-10.429 </x-m>
+     <y-m>-19.944 </y-m>
+     <z-m>  6.439 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-G2</object-name>
+   <property>/engines/engine[5]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-10.797 </x-m>
+     <y-m>-19.944 </y-m>
+     <z-m>  6.439 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur gauche intérieur droit 7 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-G3</object-name>
+   <property>/engines/engine[6]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>-10.900 </x-m>
+     <y-m>-13.786 </y-m>
+     <z-m>  5.906 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-G3</object-name>
+   <property>/engines/engine[6]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>helice-G3</object-name>
+   <property>/engines/engine[6]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-10.932 </x-m>
+     <y-m>-13.786 </y-m>
+     <z-m>  5.906 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-G3</object-name>
+   <property>/engines/engine[6]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-11.300 </x-m>
+     <y-m>-13.786 </y-m>
+     <z-m>  5.906 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Moteur gauche intérieur 8 -->
+ <animation>
+   <type>spin</type>
+   <object-name>disque-G4</object-name>
+   <property>/engines/engine[7]/rpm</property>
+   <factor>0.5625</factor>
+   <center>
+     <x-m>-11.728 </x-m>
+     <y-m> -7.533 </y-m>
+     <z-m>  5.421 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+ 
+ <animation> 
+   <type>blend</type>
+   <object-name>disque-G4</object-name>
+   <property>/engines/engine[7]/rpm</property>
+   <factor>0.00015</factor>
+   <offset>-0.5</offset>
+   <min>0.0</min>
+   <max>0.5</max>
+ </animation>
+ 
+ <animation>
+   <type>spin</type>
+   <object-name>helice-G4</object-name>
+   <property>/engines/engine[7]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-11.745 </x-m>
+     <y-m> -7.533 </y-m>
+     <z-m>  5.421 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>spin</type>
+   <object-name>bol-G4</object-name>
+   <property>/engines/engine[7]/rpm</property>
+   <factor>0.5625</factor> 
+   <center>
+     <x-m>-12.113 </x-m>
+     <y-m> -7.533 </y-m>
+     <z-m>  5.421 </z-m>
+   </center>
+   <axis>
+     <x>1</x>
+     <y>0</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+<!-- Animations des ailerons -->
+
+ <animation>
+  <type>rotate</type>
+  <object-name>aileron-G</object-name>
+  <property>/surface-positions/left-aileron-pos-norm</property>
+  <factor>25.0</factor>
+  <offset-deg>0</offset-deg>   
+  <center>
+   <x-m>  3.594 </x-m>
+   <y-m>-37.029 </y-m>
+   <z-m>  7.295 </z-m>
+  </center>
+  <axis>
+   <x> -0.04 </x>
+   <y> -1.00 </y>
+   <z>  0.05 </z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>aileron-D</object-name>
+  <property>/surface-positions/right-aileron-pos-norm</property>
+  <factor>25.0</factor>
+  <offset-deg>0</offset-deg>   
+  <center>
+   <x-m>  3.594 </x-m>
+   <y-m> 37.029 </y-m>
+   <z-m>  7.295 </z-m>
+  </center>
+  <axis>
+   <x> -0.04 </x>
+   <y>  1.00 </y>
+   <z>  0.05 </z>
+  </axis>
+ </animation>
+
+<!-- Gouverne de profondeur gauche -->
+ <animation>
+   <type>rotate</type>
+   <object-name>aileron-A-G</object-name>
+   <property>/surface-positions/elevator-pos-norm</property>
+   <factor>25.0</factor>
+   <offset-deg>0</offset-deg>   
+   <center> 
+     <x-m> 39.210 </x-m>
+     <y-m> -5.699 </y-m>
+     <z-m>  8.000 </z-m>
+   </center>
+   <axis>
+     <x> 0.0 </x>
+     <y> 1.0 </y>
+     <z> 0.0 </z>
+   </axis>
+ </animation>
+
+<!-- Gouverne de profondeur droite -->
+ <animation>
+   <type>rotate</type>
+   <object-name>aileron-A-D</object-name>
+   <property>/surface-positions/elevator-pos-norm</property>
+   <factor>-25.0</factor>
+   <offset-deg>0</offset-deg>   
+   <center>
+     <x-m> 39.210 </x-m>
+     <y-m>  5.699 </y-m>
+     <z-m>  8.000 </z-m>
+   </center>
+   <axis>
+    <x>  0.0 </x>
+    <y> -1.0 </y> 
+    <z>  0.0 </z>
+   </axis>
+ </animation>
+ 
+<!-- Gouverne de direction -->
+ <animation>
+   <type>rotate</type>
+   <object-name>gouverne</object-name>
+   <property>/surface-positions/rudder-pos-norm</property>
+   <factor>20</factor>
+   <offset-deg>0</offset-deg>   
+   <center>
+     <x-m> 40.960 </x-m>
+     <y-m>  0.000 </y-m>
+     <z-m> 14.171 </z-m>
+   </center>
+   <axis>
+     <x>0.0</x>
+     <y>0.0</y>
+     <z>1.0</z>
+   </axis>
+ </animation>
+
+<!-- Volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>flap-G</object-name>
+    <property>/surface-positions/flap-pos-norm</property>
+    <factor>-55.0</factor>
+    <offset-deg>0</offset-deg>   
+    <center>
+      <x-m>   5.337 </x-m>
+      <y-m> -15.170 </y-m>
+      <z-m>   4,250 </z-m>
+    </center>
+    <axis>
+      <x> -0.076 </x>
+      <y> -1.000 </y>
+      <z>  0.070 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>flap-D</object-name>
+    <property>/surface-positions/flap-pos-norm</property>
+    <factor>55.0</factor>
+    <offset-deg>0</offset-deg>   
+    <center>
+      <x-m>  5.337 </x-m>
+      <y-m> 15.170 </y-m>
+      <z-m>  4,250 </z-m>
+    </center>
+    <axis>
+      <x> -0.076 </x>
+      <y>  1.000 </y> 
+      <z>  0.070 </z>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°1 (pilote et copilote) -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette1-pilote</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.360 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette1-copilote</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.359 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+ 
+<!-- Manettes des gaz N°2 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette2-pilote</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.345 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette2-copilote</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.344 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°3 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette3-pilote</object-name>
+    <property>/controls/engines/engine[2]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.330 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette3-copilote</object-name>
+    <property>/controls/engines/engine[2]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.329 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°4 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette4-pilote</object-name>
+    <property>/controls/engines/engine[3]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.315 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette4-copilote</object-name>
+    <property>/controls/engines/engine[3]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.314 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°5 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette5-pilote</object-name>
+    <property>/controls/engines/engine[4]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.300 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette5-copilote</object-name>
+    <property>/controls/engines/engine[4]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.299 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°6 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette6-pilote</object-name>
+    <property>/controls/engines/engine[5]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.286 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette6-copilote</object-name>
+    <property>/controls/engines/engine[5]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.285 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°7 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette7-pilote</object-name>
+    <property>/controls/engines/engine[6]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.271 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette7-copilote</object-name>
+    <property>/controls/engines/engine[6]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.270 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Manettes des gaz N°8 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette8-pilote</object-name>
+    <property>/controls/engines/engine[7]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>  -0.256 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>manette8-copilote</object-name>
+    <property>/controls/engines/engine[7]/throttle</property>
+    <factor> 80.0</factor>
+    <center>
+      <x-m> -14.190 </x-m>
+      <y-m>   0.255 </y-m>
+      <z-m>   5.940 </z-m>
+    </center>
+    <axis>
+      <x1-m>  0.000 </x1-m>
+      <y1-m>  1.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m>  0.000 </x2-m>
+      <y2-m> -1.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!-- Les manettes des gaz coté ingénieur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette1-ing</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -12.379 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette2-ing</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -12.294 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette3-ing</object-name>
+    <property>/controls/engines/engine[2]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -12.210 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette4-ing</object-name>
+    <property>/controls/engines/engine[3]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -12.125 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette5-ing</object-name>
+    <property>/controls/engines/engine[4]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -12.041 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette6-ing</object-name>
+    <property>/controls/engines/engine[5]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -11.956 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette7-ing</object-name>
+    <property>/controls/engines/engine[6]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -11.872 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette8-ing</object-name>
+    <property>/controls/engines/engine[7]/throttle</property>
+    <factor> 0.6 </factor>
+    <center>
+      <x-m> -11.787 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+  
+<!-- Les volants (pilote et copilote) -->  
+  <animation>
+    <type>rotate</type>
+    <object-name>axe-volant-pilote</object-name>
+    <object-name>volant-pilote</object-name>    
+    <property>/controls/flight/elevator</property>
+    <factor> -13 </factor>
+    <offset-deg> -15.000 </offset-deg>
+    <center>
+      <x-m> -13.982 </x-m>
+      <y-m>  -0.825 </y-m>
+      <z-m>   5.433 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>volant-pilote</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor> -90.000 </factor>
+    <offset-deg> 0.000 </offset-deg>
+    <center>
+      <x-m> -13.958 </x-m>
+      <y-m>  -0.573 </y-m>
+      <z-m>   6.121 </z-m>
+    </center>
+    <axis>
+      <x> 1.0 </x>
+      <y> 0.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axe-volant-copilote</object-name>
+    <object-name>volant-copilote</object-name>    
+    <property>/controls/flight/elevator</property>
+    <factor> -13 </factor>
+    <offset-deg> -15.000 </offset-deg>
+    <center>
+      <x-m> -13.982 </x-m>
+      <y-m>   0.825 </y-m>
+      <z-m>   5.433 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>volant-copilote</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor> -90.000 </factor>
+    <offset-deg> 0.000 </offset-deg>
+    <center>
+      <x-m> -13.958 </x-m>
+      <y-m>   0.573 </y-m>
+      <z-m>   6.121 </z-m>
+    </center>
+    <axis>
+      <x> 1.0 </x>
+      <y> 0.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette1-ing</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -12.379 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette2-ing</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -12.294 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette3-ing</object-name>
+    <property>/controls/engines/engine[2]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -12.210 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette4-ing</object-name>
+    <property>/controls/engines/engine[3]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -12.125 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette5-ing</object-name>
+    <property>/controls/engines/engine[4]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -12.041 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette6-ing</object-name>
+    <property>/controls/engines/engine[5]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -11.956 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette7-ing</object-name>
+    <property>/controls/engines/engine[6]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -11.872 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette8-ing</object-name>
+    <property>/controls/engines/engine[7]/throttle</property>
+    <factor> 35.0</factor>
+    <center>
+      <x-m> -11.787 </x-m>
+      <y-m>   1.705 </y-m>
+      <z-m>   4.976 </z-m>
+    </center>
+    <axis>
+      <x1-m>  1.000 </x1-m>
+      <y1-m>  0.000 </y1-m>
+      <z1-m>  0.000 </z1-m>
+      <x2-m> -1.000 </x2-m>
+      <y2-m>  0.000 </y2-m>
+      <z2-m>  0.000 </z2-m>
+    </axis>
+  </animation>
+
+<!--
+  </animation>
+    <type>rotate</type>
+    <object-name>porte-A-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor>170</factor>
+    <center>
+      <x-m> -14.989 </x-m>
+      <y-m>  -2.879 </y-m>
+      <z-m>   1.395 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  </animation>
+    <type>rotate</type>
+    <object-name>porte-A-D</object-name>
+    <object-name>hublot-A-D</object-name>    
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <factor>-170</factor>
+    <center>
+      <x-m> -14.989 </x-m>
+      <y-m>   2.879 </y-m>
+      <z-m>   1.395 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+-->
+
+</PropertyList>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<PropertyList>
+
+  <name>Moteur 3 plus</name>
+  <background>transparency.rgb</background>
+  <w> 100 </w>
+  <h> 100 </h>
+
+  <instruments>
+    <instrument>
+      <name>Moteur 3 plus</name>
+       <x>  50 </x>
+       <y>  50 </y>
+       <w> 100 </w>
+       <h> 100 </h>
+       <w-base> 100 </w-base>
+       <h-base> 100 </h-base>
+
+       <actions>  
+         <action>
+           <name>Augmente moteur 3</name>
+           <button> 0 </button>
+           <x> -50 </x>
+           <y> -50 </y>
+           <w> 100 </w>
+           <h> 100 </h>
+           <binding>
+             <command>property-adjust</command>
+             <property>controls/engines/engine[2]/throttle</property>
+             <step> 0.05 </step>
+             <min>  0.00 </min>
+             <max>  1.00 </max>
+             <wrap>false</wrap>
+           </binding>
+        </action>
+     </actions>
+   </instrument>
+ </instruments>
+</PropertyList>

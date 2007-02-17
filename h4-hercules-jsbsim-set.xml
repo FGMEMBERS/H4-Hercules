@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList include="h4-hercules-base.xml">
+
+  <sim>
+    <description>Hughes H4 Hercules (JSBSim)</description>
+    <status>BD/BE</status>
+    <aircraft-version>0.66</aircraft-version>
+    <flight-model>jsb</flight-model>
+    <aero>h4-hercules-jsbsim</aero>
+  </sim>
+ 
+  <fdm>
+    <jsbsim>
+      <ice>
+        <wing type="double">0.0</wing>
+        <stabilizer type="double">0.0</stabilizer>
+        <propeller type="double">0.0</propeller>
+        <fuselage type="double">0.0</fuselage>
+      </ice>
+    </jsbsim>
+  </fdm>
+
+</PropertyList>
