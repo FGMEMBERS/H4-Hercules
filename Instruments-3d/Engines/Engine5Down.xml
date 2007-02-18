@@ -5,7 +5,7 @@
 <PropertyList>
 
   <name>Moteur 5 moins</name>
-  <background>transparency.rgb</background>
+  <background>Aircraft/H4-Hercules/Instruments-3d/Engines/transparency.rgb</background>
   <w> 100 </w>
   <h> 100 </h>
 

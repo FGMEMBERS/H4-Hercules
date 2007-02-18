@@ -5,12 +5,12 @@ English/Français
 
 A little history
 ================
-On November 2, 1947, at 13h40, not having less than 50.000 people piled up on the quays of the wearing of Los Angeles , H4 of 
-Howard Hughes carried out its first lift-offle. First and the last besides. However, much agree to saying, 
-that not having left the ground effect, this seaplane forever really stolen .
+On November 2, 1947, at 13:40 localtime, there was more than 50,000 people packed into the waterfront quays of Los Angeles, 
+all there to witness the H4 Hercules of Howard Hughes Corp. carry out its first lift-off - the first and only time this aircraft flew.
+The aircraft was so big it struggled to get airborne, and flew only a few feet above the water.
 
-Therefore today we propose to you to see this dream finally becoming reality (virtual certainly). Welcome with the orders greater 
-flying scale ever built by the man.
+Until now, there was no way to fly this aircraft again - but with Flightgear, this has become a reality in the virtual world
+ - the best virtual model seen.
 
 Hughes H4 Hercules
 ==================
