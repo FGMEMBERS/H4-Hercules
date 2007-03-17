@@ -44,7 +44,7 @@ Thanks
 Benjamin DELRUE for the superb modeling of the wing of the seaplane
 Authors of FlightGear to allow us to fly free. 
 
-Thanks with: ROBIN Gérard for his assistance with Aeromatic 0.9, FABERT Didier to have programmed KFreeFlight 
+Thanks with: FABERT Didier to have programmed KFreeFlight 
 
 ===============
 BARANGER Emmanuel
@@ -95,7 +95,7 @@ Remerciements
 Benjamin DELRUE pour la superbe modélisation de l'aile de l'hydravion
 Les auteurs de FlightGear pour nous permettre de voler libre.
 
-Remerciements à : ROBIN Gérard pour son aide avec Aeromatic 0.9, FABERT Didier pour avoir programmé KFreeFlight
+Remerciements à : FABERT Didier pour avoir programmé KFreeFlight
 
 ===============
 BARANGER Emmanuel

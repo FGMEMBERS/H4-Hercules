@@ -19,6 +19,83 @@
 
  </offsets>
 
+ <animation>
+   <object-name>Cube.004</object-name>
+   <object-name>Cube.001</object-name>
+   <object-name>Cube.009</object-name>
+   <object-name>Cube.008</object-name>
+   <object-name>Cube.020</object-name>
+   <object-name>Plane.007</object-name>
+   <object-name>Plane.008</object-name>
+   <object-name>Plane.009</object-name>
+   <object-name>ailes</object-name>
+   <object-name>aileron-A-D</object-name>
+   <object-name>aileron-A-G</object-name>
+   <object-name>aileron-D</object-name>
+   <object-name>aileron-G</object-name>
+   <object-name>bol-D2</object-name>
+   <object-name>bol-G3</object-name>
+   <object-name>bol-D4</object-name>
+   <object-name>bol-D3</object-name>
+   <object-name>bol-D1</object-name>
+   <object-name>bol-G2</object-name>
+   <object-name>bol-G1</object-name>
+   <object-name>bol-G4</object-name>
+   <object-name>cabine.003_1</object-name>
+   <object-name>cadrans02</object-name>
+   <object-name>enpennagefixeG</object-name>
+   <object-name>enpennagefixeD</object-name>
+   <object-name>flap-G</object-name>
+   <object-name>flap-D</object-name>
+   <object-name>flotteur-D</object-name>
+   <object-name>flotteur-G</object-name>
+   <object-name>gouverne</object-name>
+   <object-name>gouvernefixe</object-name>
+   <object-name>helice-G4</object-name>
+   <object-name>helice-G2</object-name>
+   <object-name>helice-G1</object-name>
+   <object-name>helice-G3</object-name>
+   <object-name>helice-D2</object-name>
+   <object-name>helice-D1</object-name>
+   <object-name>helice-D4</object-name>
+   <object-name>helice-D3</object-name>
+   <object-name>interieurmoteurs</object-name>
+   <object-name>lampe-D</object-name>
+   <object-name>lampe-G</object-name>
+   <object-name>moteurs</object-name>
+   <object-name>portants</object-name>
+   <object-name>portants.001</object-name>
+   <object-name>porte-A-G</object-name>
+   <object-name>porte-A-D</object-name>
+   <object-name>prises-air-G4</object-name>
+   <object-name>prises-air-G3</object-name>
+   <object-name>prises-airD1</object-name>
+   <object-name>prises-air-G1</object-name>
+   <object-name>prises-air-G2</object-name>
+   <object-name>prises-airG3</object-name>
+   <object-name>prises-airG2</object-name>
+   <object-name>prises-airG1</object-name>
+   <object-name>prises-airD2</object-name>
+   <object-name>prises-airD3</object-name>
+   <object-name>prises-airD4</object-name>
+   <object-name>prises-airG4</object-name>
+   <object-name>prises-air-D4</object-name>
+   <object-name>prises-air-D1</object-name>
+   <object-name>prises-air-D2</object-name>
+   <object-name>prises-air-D3</object-name>
+
+   <!-- transparent objects -->
+   <object-name>cabine.001</object-name>
+   <object-name>disque-G1</object-name>
+   <object-name>disque-G2</object-name>
+   <object-name>disque-G3</object-name>
+   <object-name>disque-G4</object-name>
+   <object-name>disque-D1</object-name>
+   <object-name>disque-D2</object-name>
+   <object-name>disque-D3</object-name>
+   <object-name>disque-D4</object-name>
+ </animation>
+
  <model>
    <path>Aircraft/H4-Hercules/Instruments-3d/h4-panel-pilot.xml</path>
  </model>
@@ -433,7 +510,7 @@
    <object-name>disque-D1</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[0]/rpm</property>
+       <property>engines/engine[0]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -444,7 +521,7 @@
    <object-name>disque-D2</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[1]/rpm</property>
+       <property>engines/engine[1]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -455,7 +532,7 @@
    <object-name>disque-D3</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[2]/rpm</property>
+       <property>engines/engine[2]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -466,7 +543,7 @@
    <object-name>disque-D4</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[3]/rpm</property>
+       <property>engines/engine[3]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -477,7 +554,7 @@
    <object-name>disque-G1</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[4]/rpm</property>
+       <property>engines/engine[4]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -488,7 +565,7 @@
    <object-name>disque-G2</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[5]/rpm</property>
+       <property>engines/engine[5]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -499,7 +576,7 @@
    <object-name>disque-G3</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[6]/rpm</property>
+       <property>engines/engine[6]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -510,7 +587,7 @@
    <object-name>disque-G4</object-name>
    <condition>
      <greater-than>
-       <property>/engines/engine[7]/rpm</property>
+       <property>engines/engine[7]/rpm</property>
        <value>1750</value>
      </greater-than>
    </condition>
@@ -522,7 +599,7 @@
    <object-name>helice-D1</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[0]/rpm</property>
+       <property>engines/engine[0]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -533,7 +610,7 @@
    <object-name>helice-D2</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[1]/rpm</property>
+       <property>engines/engine[1]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -544,7 +621,7 @@
    <object-name>helice-D3</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[2]/rpm</property>
+       <property>engines/engine[2]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -555,7 +632,7 @@
    <object-name>helice-D4</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[3]/rpm</property>
+       <property>engines/engine[3]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -566,7 +643,7 @@
    <object-name>helice-G1</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[4]/rpm</property>
+       <property>engines/engine[4]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -577,7 +654,7 @@
    <object-name>helice-G2</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[5]/rpm</property>
+       <property>engines/engine[5]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -588,7 +665,7 @@
    <object-name>helice-G3</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[6]/rpm</property>
+       <property>engines/engine[6]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -599,7 +676,7 @@
    <object-name>helice-G4</object-name>
    <condition>
      <less-than>
-       <property>/engines/engine[7]/rpm</property>
+       <property>engines/engine[7]/rpm</property>
        <value>1800</value>
     </less-than>
    </condition>
@@ -609,7 +686,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-D1</object-name>
-   <property>/engines/engine[0]/rpm</property>
+   <property>engines/engine[0]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m> -9.509 </x-m>
@@ -626,7 +703,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-D1</object-name>
-   <property>/engines/engine[0]/rpm</property>
+   <property>engines/engine[0]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -636,7 +713,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-D1</object-name>
-   <property>/engines/engine[0]/rpm</property>
+   <property>engines/engine[0]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m> -9.577 </x-m>
@@ -653,7 +730,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-D1</object-name>
-   <property>/engines/engine[0]/rpm</property>
+   <property>engines/engine[0]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m> -9.945 </x-m>
@@ -671,7 +748,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-D2</object-name>
-   <property>/engines/engine[1]/rpm</property>
+   <property>engines/engine[1]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>-10.362 </x-m>
@@ -688,7 +765,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-D2</object-name>
-   <property>/engines/engine[1]/rpm</property>
+   <property>engines/engine[1]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -698,7 +775,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-D2</object-name>
-   <property>/engines/engine[1]/rpm</property>
+   <property>engines/engine[1]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-10.429 </x-m>
@@ -715,7 +792,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-D2</object-name>
-   <property>/engines/engine[1]/rpm</property>
+   <property>engines/engine[1]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-10.797 </x-m>
@@ -733,7 +810,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-D3</object-name>
-   <property>/engines/engine[2]/rpm</property>
+   <property>engines/engine[2]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>-10.900 </x-m>
@@ -750,7 +827,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-D3</object-name>
-   <property>/engines/engine[2]/rpm</property>
+   <property>engines/engine[2]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -760,7 +837,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-D3</object-name>
-   <property>/engines/engine[2]/rpm</property>
+   <property>engines/engine[2]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-10.932 </x-m>
@@ -777,7 +854,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-D3</object-name>
-   <property>/engines/engine[2]/rpm</property>
+   <property>engines/engine[2]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-11.300 </x-m>
@@ -795,7 +872,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-D4</object-name>
-   <property>/engines/engine[3]/rpm</property>
+   <property>engines/engine[3]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>-11.728 </x-m>
@@ -812,7 +889,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-D4</object-name>
-   <property>/engines/engine[3]/rpm</property>
+   <property>engines/engine[3]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -822,7 +899,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-D4</object-name>
-   <property>/engines/engine[3]/rpm</property>
+   <property>engines/engine[3]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-11.745 </x-m>
@@ -839,7 +916,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-D4</object-name>
-   <property>/engines/engine[3]/rpm</property>
+   <property>engines/engine[3]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-12.113 </x-m>
@@ -857,7 +934,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-G1</object-name>
-   <property>/engines/engine[4]/rpm</property>
+   <property>engines/engine[4]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>  -9.509 </x-m>
@@ -874,7 +951,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-G1</object-name>
-   <property>/engines/engine[4]/rpm</property>
+   <property>engines/engine[4]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -884,7 +961,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-G1</object-name>
-   <property>/engines/engine[4]/rpm</property>
+   <property>engines/engine[4]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>  -9.577 </x-m>
@@ -901,7 +978,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-G1</object-name>
-   <property>/engines/engine[4]/rpm</property>
+   <property>engines/engine[4]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>  -9.945 </x-m>
@@ -919,7 +996,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-G2</object-name>
-   <property>/engines/engine[5]/rpm</property>
+   <property>engines/engine[5]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>-10.362 </x-m>
@@ -936,7 +1013,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-G2</object-name>
-   <property>/engines/engine[5]/rpm</property>
+   <property>engines/engine[5]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -946,7 +1023,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-G2</object-name>
-   <property>/engines/engine[5]/rpm</property>
+   <property>engines/engine[5]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-10.429 </x-m>
@@ -963,7 +1040,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-G2</object-name>
-   <property>/engines/engine[5]/rpm</property>
+   <property>engines/engine[5]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-10.797 </x-m>
@@ -981,7 +1058,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-G3</object-name>
-   <property>/engines/engine[6]/rpm</property>
+   <property>engines/engine[6]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>-10.900 </x-m>
@@ -998,7 +1075,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-G3</object-name>
-   <property>/engines/engine[6]/rpm</property>
+   <property>engines/engine[6]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -1008,7 +1085,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-G3</object-name>
-   <property>/engines/engine[6]/rpm</property>
+   <property>engines/engine[6]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-10.932 </x-m>
@@ -1025,7 +1102,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-G3</object-name>
-   <property>/engines/engine[6]/rpm</property>
+   <property>engines/engine[6]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-11.300 </x-m>
@@ -1043,7 +1120,7 @@
  <animation>
    <type>spin</type>
    <object-name>disque-G4</object-name>
-   <property>/engines/engine[7]/rpm</property>
+   <property>engines/engine[7]/rpm</property>
    <factor>0.5625</factor>
    <center>
      <x-m>-11.728 </x-m>
@@ -1060,7 +1137,7 @@
  <animation> 
    <type>blend</type>
    <object-name>disque-G4</object-name>
-   <property>/engines/engine[7]/rpm</property>
+   <property>engines/engine[7]/rpm</property>
    <factor>0.00015</factor>
    <offset>-0.5</offset>
    <min>0.0</min>
@@ -1070,7 +1147,7 @@
  <animation>
    <type>spin</type>
    <object-name>helice-G4</object-name>
-   <property>/engines/engine[7]/rpm</property>
+   <property>engines/engine[7]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-11.745 </x-m>
@@ -1087,7 +1164,7 @@
  <animation>
    <type>spin</type>
    <object-name>bol-G4</object-name>
-   <property>/engines/engine[7]/rpm</property>
+   <property>engines/engine[7]/rpm</property>
    <factor>0.5625</factor> 
    <center>
      <x-m>-12.113 </x-m>
@@ -1105,7 +1182,7 @@
  <animation>
   <type>rotate</type>
   <object-name>aileron-G</object-name>
-  <property>/surface-positions/left-aileron-pos-norm</property>
+  <property>surface-positions/left-aileron-pos-norm</property>
   <factor>25.0</factor>
   <axis>
    <x1-m>   3.949 </x1-m>
@@ -1120,7 +1197,7 @@
  <animation>
   <type>rotate</type>
   <object-name>aileron-D</object-name>
-  <property>/surface-positions/right-aileron-pos-norm</property>
+  <property>surface-positions/right-aileron-pos-norm</property>
   <factor>25.0</factor>
   <axis>
    <x1-m>   3.949 </x1-m>
@@ -1136,7 +1213,7 @@
  <animation>
    <type>rotate</type>
    <object-name>aileron-A-G</object-name>
-   <property>/surface-positions/elevator-pos-norm</property>
+   <property>surface-positions/elevator-pos-norm</property>
    <factor>25.0</factor>
    <offset-deg>0</offset-deg>   
    <center> 
@@ -1155,7 +1232,7 @@
  <animation>
    <type>rotate</type>
    <object-name>aileron-A-D</object-name>
-   <property>/surface-positions/elevator-pos-norm</property>
+   <property>surface-positions/elevator-pos-norm</property>
    <factor>-25.0</factor>
    <offset-deg>0</offset-deg>   
    <center>
@@ -1174,7 +1251,7 @@
  <animation>
    <type>rotate</type>
    <object-name>gouverne</object-name>
-   <property>/surface-positions/rudder-pos-norm</property>
+   <property>surface-positions/rudder-pos-norm</property>
    <factor>20</factor>
    <offset-deg>0</offset-deg>   
    <center>
@@ -1193,7 +1270,7 @@
   <animation>
     <type>rotate</type>
     <object-name>flap-G</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor>-55.0</factor>
     <axis>
       <x1-m>   5.892 </x1-m>
@@ -1208,7 +1285,7 @@
   <animation>
     <type>rotate</type>
     <object-name>flap-D</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor>55.0</factor>
     <axis>
       <x1-m>   5.892 </x1-m>
@@ -1224,7 +1301,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette1-pilote</object-name>
-    <property>/controls/engines/engine[0]/throttle</property>
+    <property>controls/engines/engine[0]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1244,7 +1321,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette1-copilote</object-name>
-    <property>/controls/engines/engine[0]/throttle</property>
+    <property>controls/engines/engine[0]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1265,7 +1342,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette2-pilote</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
+    <property>controls/engines/engine[1]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1285,7 +1362,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette2-copilote</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
+    <property>controls/engines/engine[1]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1306,7 +1383,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette3-pilote</object-name>
-    <property>/controls/engines/engine[2]/throttle</property>
+    <property>controls/engines/engine[2]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1326,7 +1403,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette3-copilote</object-name>
-    <property>/controls/engines/engine[2]/throttle</property>
+    <property>controls/engines/engine[2]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1347,7 +1424,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette4-pilote</object-name>
-    <property>/controls/engines/engine[3]/throttle</property>
+    <property>controls/engines/engine[3]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1367,7 +1444,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette4-copilote</object-name>
-    <property>/controls/engines/engine[3]/throttle</property>
+    <property>controls/engines/engine[3]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1388,7 +1465,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette5-pilote</object-name>
-    <property>/controls/engines/engine[4]/throttle</property>
+    <property>controls/engines/engine[4]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1408,7 +1485,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette5-copilote</object-name>
-    <property>/controls/engines/engine[4]/throttle</property>
+    <property>controls/engines/engine[4]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1429,7 +1506,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette6-pilote</object-name>
-    <property>/controls/engines/engine[5]/throttle</property>
+    <property>controls/engines/engine[5]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1449,7 +1526,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette6-copilote</object-name>
-    <property>/controls/engines/engine[5]/throttle</property>
+    <property>controls/engines/engine[5]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1470,7 +1547,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette7-pilote</object-name>
-    <property>/controls/engines/engine[6]/throttle</property>
+    <property>controls/engines/engine[6]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1490,7 +1567,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette7-copilote</object-name>
-    <property>/controls/engines/engine[6]/throttle</property>
+    <property>controls/engines/engine[6]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1511,7 +1588,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette8-pilote</object-name>
-    <property>/controls/engines/engine[7]/throttle</property>
+    <property>controls/engines/engine[7]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1531,7 +1608,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette8-copilote</object-name>
-    <property>/controls/engines/engine[7]/throttle</property>
+    <property>controls/engines/engine[7]/throttle</property>
     <factor> 80.0</factor>
     <center>
       <x-m> -14.190 </x-m>
@@ -1552,7 +1629,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette1-ing</object-name>
-    <property>/controls/engines/engine[0]/throttle</property>
+    <property>controls/engines/engine[0]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -12.379 </x-m>
@@ -1572,7 +1649,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette2-ing</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
+    <property>controls/engines/engine[1]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -12.294 </x-m>
@@ -1592,7 +1669,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette3-ing</object-name>
-    <property>/controls/engines/engine[2]/throttle</property>
+    <property>controls/engines/engine[2]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -12.210 </x-m>
@@ -1612,7 +1689,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette4-ing</object-name>
-    <property>/controls/engines/engine[3]/throttle</property>
+    <property>controls/engines/engine[3]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -12.125 </x-m>
@@ -1632,7 +1709,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette5-ing</object-name>
-    <property>/controls/engines/engine[4]/throttle</property>
+    <property>controls/engines/engine[4]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -12.041 </x-m>
@@ -1652,7 +1729,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette6-ing</object-name>
-    <property>/controls/engines/engine[5]/throttle</property>
+    <property>controls/engines/engine[5]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -11.956 </x-m>
@@ -1672,7 +1749,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette7-ing</object-name>
-    <property>/controls/engines/engine[6]/throttle</property>
+    <property>controls/engines/engine[6]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -11.872 </x-m>
@@ -1692,7 +1769,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette8-ing</object-name>
-    <property>/controls/engines/engine[7]/throttle</property>
+    <property>controls/engines/engine[7]/throttle</property>
     <factor> 0.6 </factor>
     <center>
       <x-m> -11.787 </x-m>
@@ -1714,7 +1791,7 @@
     <type>rotate</type>
     <object-name>axe-volant-pilote</object-name>
     <object-name>volant-pilote</object-name>    
-    <property>/controls/flight/elevator</property>
+    <property>controls/flight/elevator</property>
     <factor> -13 </factor>
     <offset-deg> -15.000 </offset-deg>
     <center>
@@ -1732,7 +1809,7 @@
   <animation>
     <type>rotate</type>
     <object-name>volant-pilote</object-name>
-    <property>/controls/flight/aileron</property>
+    <property>controls/flight/aileron</property>
     <factor> -90.000 </factor>
     <offset-deg> 0.000 </offset-deg>
     <center>
@@ -1751,7 +1828,7 @@
     <type>rotate</type>
     <object-name>axe-volant-copilote</object-name>
     <object-name>volant-copilote</object-name>    
-    <property>/controls/flight/elevator</property>
+    <property>controls/flight/elevator</property>
     <factor> -13 </factor>
     <offset-deg> -15.000 </offset-deg>
     <center>
@@ -1769,7 +1846,7 @@
   <animation>
     <type>rotate</type>
     <object-name>volant-copilote</object-name>
-    <property>/controls/flight/aileron</property>
+    <property>controls/flight/aileron</property>
     <factor> -90.000 </factor>
     <offset-deg> 0.000 </offset-deg>
     <center>
@@ -1787,7 +1864,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette1-ing</object-name>
-    <property>/controls/engines/engine[0]/throttle</property>
+    <property>controls/engines/engine[0]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -12.379 </x-m>
@@ -1807,7 +1884,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette2-ing</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
+    <property>controls/engines/engine[1]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -12.294 </x-m>
@@ -1827,7 +1904,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette3-ing</object-name>
-    <property>/controls/engines/engine[2]/throttle</property>
+    <property>controls/engines/engine[2]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -12.210 </x-m>
@@ -1847,7 +1924,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette4-ing</object-name>
-    <property>/controls/engines/engine[3]/throttle</property>
+    <property>controls/engines/engine[3]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -12.125 </x-m>
@@ -1867,7 +1944,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette5-ing</object-name>
-    <property>/controls/engines/engine[4]/throttle</property>
+    <property>controls/engines/engine[4]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -12.041 </x-m>
@@ -1887,7 +1964,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette6-ing</object-name>
-    <property>/controls/engines/engine[5]/throttle</property>
+    <property>controls/engines/engine[5]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -11.956 </x-m>
@@ -1907,7 +1984,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette7-ing</object-name>
-    <property>/controls/engines/engine[6]/throttle</property>
+    <property>controls/engines/engine[6]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -11.872 </x-m>
@@ -1927,7 +2004,7 @@
   <animation>
     <type>rotate</type>
     <object-name>manette8-ing</object-name>
-    <property>/controls/engines/engine[7]/throttle</property>
+    <property>controls/engines/engine[7]/throttle</property>
     <factor> 35.0</factor>
     <center>
       <x-m> -11.787 </x-m>
@@ -1949,7 +2026,7 @@
     <type>rotate</type>
     <object-name>porte-A-G</object-name>
     <object-name>hublot-A-G</object-name>    
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor>170</factor>
     <center>
       <x-m> -14.989 </x-m>
@@ -1967,7 +2044,7 @@
     <type>rotate</type>
     <object-name>porte-A-D</object-name>
     <object-name>hublot-A-D</object-name>    
-    <property>/instrumentation/doors/passenger/position-norm</property>
+    <property>instrumentation/doors/passenger/position-norm</property>
     <factor>-170</factor>
     <center>
       <x-m> -14.989 </x-m>
