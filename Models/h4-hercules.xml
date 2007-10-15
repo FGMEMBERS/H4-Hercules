@@ -20,14 +20,8 @@
  </offsets>
 
  <animation>
-   <object-name>Cube.004</object-name>
-   <object-name>Cube.001</object-name>
-   <object-name>Cube.009</object-name>
-   <object-name>Cube.008</object-name>
-   <object-name>Cube.020</object-name>
-   <object-name>Plane.007</object-name>
-   <object-name>Plane.008</object-name>
-   <object-name>Plane.009</object-name>
+   <object-name>fuselage</object-name>
+   <object-name>interieur</object-name>
    <object-name>ailes</object-name>
    <object-name>aileron-A-D</object-name>
    <object-name>aileron-A-G</object-name>
@@ -41,8 +35,13 @@
    <object-name>bol-G2</object-name>
    <object-name>bol-G1</object-name>
    <object-name>bol-G4</object-name>
-   <object-name>cabine.003_1</object-name>
+   <object-name>planchet</object-name>
+   <object-name>tableradio</object-name>
+   <object-name>fondcadrans</object-name>
+   <object-name>cadrans01</object-name>
    <object-name>cadrans02</object-name>
+   <object-name>cadrans03</object-name>
+   <object-name>cadrans04</object-name>
    <object-name>enpennagefixeG</object-name>
    <object-name>enpennagefixeD</object-name>
    <object-name>flap-G</object-name>
@@ -60,11 +59,9 @@
    <object-name>helice-D4</object-name>
    <object-name>helice-D3</object-name>
    <object-name>interieurmoteurs</object-name>
-   <object-name>lampe-D</object-name>
-   <object-name>lampe-G</object-name>
    <object-name>moteurs</object-name>
-   <object-name>portants</object-name>
-   <object-name>portants.001</object-name>
+   <object-name>portantsG</object-name>
+   <object-name>portantsD</object-name>
    <object-name>porte-A-G</object-name>
    <object-name>porte-A-D</object-name>
    <object-name>prises-air-G4</object-name>
@@ -83,17 +80,47 @@
    <object-name>prises-air-D1</object-name>
    <object-name>prises-air-D2</object-name>
    <object-name>prises-air-D3</object-name>
+   <object-name>bar1</object-name>
+   <object-name>bar2</object-name>
+   <object-name>bar3</object-name>
+   <object-name>bar4</object-name>
+   <object-name>bar5</object-name>
+   <object-name>bar6</object-name>
+   <object-name>bar7</object-name>
+   <object-name>verres</object-name>
+   <object-name>liquides</object-name>
+   <object-name>siegeP</object-name>
+   <object-name>siegeC</object-name>
+   <object-name>siegeR</object-name>
+   <object-name>siegeE</object-name>
+   <object-name>tourvitres</object-name>
+   <object-name>tableau2</object-name>
+   <object-name>tableau3</object-name>
+   <object-name>tableau4</object-name>
+   <object-name>tableau5</object-name>
+   <object-name>tableau6</object-name>
+   <object-name>tableau7</object-name>
 
    <!-- transparent objects -->
-   <object-name>cabine.001</object-name>
-   <object-name>disque-G1</object-name>
-   <object-name>disque-G2</object-name>
-   <object-name>disque-G3</object-name>
-   <object-name>disque-G4</object-name>
-   <object-name>disque-D1</object-name>
-   <object-name>disque-D2</object-name>
-   <object-name>disque-D3</object-name>
-   <object-name>disque-D4</object-name>
+   <object-name>vitres</object-name>
+   <object-name>lampe-D</object-name>
+   <object-name>lampe-G</object-name>
+   <object-name>propdiscG1</object-name>
+   <object-name>propblurG1</object-name>
+   <object-name>propdiscG2</object-name>
+   <object-name>propblurG2</object-name>
+   <object-name>propdiscG3</object-name>
+   <object-name>propblurG3</object-name>
+   <object-name>propdiscG4</object-name>
+   <object-name>propblurG4</object-name>
+   <object-name>propdiscD1</object-name>
+   <object-name>propblurD1</object-name>
+   <object-name>propdiscD2</object-name>
+   <object-name>propblurD2</object-name>
+   <object-name>propdiscD3</object-name>
+   <object-name>propblurD3</object-name>
+   <object-name>propdiscD4</object-name>
+   <object-name>propblurD4</object-name>
  </animation>
 
  <model>
@@ -504,686 +531,495 @@
 <!-- Animations des hélices -->
 
 <!-- Sélection/déselection en fonction des rpm moteurs -->
-<!-- On sélectionne le disque si rpm supérieur ou égale 900 -->
- <animation>
-   <type>select</type> 
-   <object-name>disque-D1</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[0]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+<!-- On sélectionne l'un des disques en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscD1</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-D2</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[1]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propblurD1</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-D3</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[2]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propdiscD2</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-D4</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[3]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propblurD2</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-G1</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[4]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propdiscD3</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[2]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-G2</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[5]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propblurD3</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[2]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[2]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-G3</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[6]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propdiscD4</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[3]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>disque-G4</object-name>
-   <condition>
-     <greater-than>
-       <property>engines/engine[7]/rpm</property>
-       <value>1750</value>
-     </greater-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>propblurD4</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[3]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[3]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propdiscG1</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[4]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurG1</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[4]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[4]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propdiscG2</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[5]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurG2</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[5]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[5]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propdiscG3</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[6]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurG3</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[6]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[6]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propdiscG4</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[7]/rpm</property>
+        <value>1500</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurG4</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>engines/engine[7]/rpm</property>
+        <value>600.000</value>
+      </greater-than>
+      <less-than>
+        <property>engines/engine[7]/rpm</property>
+        <value>1500.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
 
 <!-- On sélectionne l'hélice si rpm inférieur à 1000 -->
- <animation>
-   <type>select</type>
-   <object-name>helice-D1</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[0]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-D1</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-D2</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[1]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-D2</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[1]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-D3</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[2]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-D3</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[2]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-D4</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[3]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-D4</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[3]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-G1</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[4]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-G1</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[4]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-G2</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[5]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-G2</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[5]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-G3</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[6]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-G3</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[6]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
 
- <animation>
-   <type>select</type>
-   <object-name>helice-G4</object-name>
-   <condition>
-     <less-than>
-       <property>engines/engine[7]/rpm</property>
-       <value>1800</value>
-    </less-than>
-   </condition>
- </animation>
+  <animation>
+    <type>select</type>
+    <object-name>helice-G4</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[7]/rpm</property>
+	<value>1500</value>
+      </less-than>
+    </condition>
+  </animation>
  
 <!-- Moteur droit d'extrémitée 1 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-D1</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-D1</object-name>
+    <object-name>bol-D1</object-name>
+    <object-name>propdiscD1</object-name>
+    <object-name>propblurD1</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m> -9.509 </x-m>
      <y-m> 26.156 </y-m>
      <z-m>  6.773 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation> 
-   <type>blend</type>
-   <object-name>disque-D1</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>helice-D1</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
-     <x-m> -9.577 </x-m>
-     <y-m> 26.156 </y-m>
-     <z-m>  6.773 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-D1</object-name>
-   <property>engines/engine[0]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
-     <x-m> -9.945 </x-m>
-     <y-m> 26.156 </y-m>
-     <z-m>  6.773 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur droit intérieur droit 2 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-D2</object-name>
-   <property>engines/engine[1]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-D2</object-name>
+    <object-name>bol-D2</object-name>
+    <object-name>propdiscD2</object-name>
+    <object-name>propblurD2</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>-10.362 </x-m>
      <y-m> 19.944 </y-m>
      <z-m>  6.439 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-D2</object-name>
-   <property>engines/engine[1]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>helice-D2</object-name>
-   <property>engines/engine[1]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-10.429 </x-m>
-     <y-m> 19.944 </y-m>
-     <z-m>  6.439 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-D2</object-name>
-   <property>engines/engine[1]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-10.797 </x-m>
-     <y-m> 19.944 </y-m>
-     <z-m>  6.439 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur droit intérieur gauche 3 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-D3</object-name>
-   <property>engines/engine[2]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-D3</object-name>
+    <object-name>bol-D3</object-name>
+    <object-name>propdiscD3</object-name>
+    <object-name>propblurD3</object-name>
+    <property>engines/engine[2]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>-10.900 </x-m>
      <y-m> 13.786 </y-m>
      <z-m>  5.906 </z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-D3</object-name>
-   <property>engines/engine[2]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>helice-D3</object-name>
-   <property>engines/engine[2]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-10.932 </x-m>
-     <y-m> 13.786 </y-m>
-     <z-m>  5.906 </z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-D3</object-name>
-   <property>engines/engine[2]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-11.300 </x-m>
-     <y-m> 13.786 </y-m>
-     <z-m>  5.906 </z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur droit intérieur 4 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-D4</object-name>
-   <property>engines/engine[3]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-D4</object-name>
+    <object-name>bol-D4</object-name>
+    <object-name>propdiscD4</object-name>
+    <object-name>propblurD4</object-name>
+    <property>engines/engine[3]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>-11.728 </x-m>
      <y-m>  7.533 </y-m>
      <z-m>  5.421 </z-m>
-   </center>
-   <axis>
-     <x>-1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-D4</object-name>
-   <property>engines/engine[3]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>helice-D4</object-name>
-   <property>engines/engine[3]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-11.745 </x-m>
-     <y-m>  7.533 </y-m>
-     <z-m>  5.421 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-D4</object-name>
-   <property>engines/engine[3]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-12.113 </x-m>
-     <y-m>  7.533 </y-m>
-     <z-m>  5.421 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur gauche d'extrémitée 5 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-G1</object-name>
-   <property>engines/engine[4]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-G1</object-name>
+    <object-name>bol-G1</object-name>
+    <object-name>propdiscG1</object-name>
+    <object-name>propblurG1</object-name>
+    <property>engines/engine[4]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>  -9.509 </x-m>
      <y-m> -26.156 </y-m>
      <z-m>   6.773 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-G1</object-name>
-   <property>engines/engine[4]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>helice-G1</object-name>
-   <property>engines/engine[4]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
-     <x-m>  -9.577 </x-m>
-     <y-m> -26.156 </y-m>
-     <z-m>   6.773 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-G1</object-name>
-   <property>engines/engine[4]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
-     <x-m>  -9.945 </x-m>
-     <y-m> -26.156 </y-m>
-     <z-m>   6.773 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur gauche intérieur gauche 6 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-G2</object-name>
-   <property>engines/engine[5]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-G2</object-name>
+    <object-name>bol-G2</object-name>
+    <object-name>propdiscG2</object-name>
+    <object-name>propblurG2</object-name>
+    <property>engines/engine[5]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>-10.362 </x-m>
      <y-m>-19.944 </y-m>
      <z-m>  6.439 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-G2</object-name>
-   <property>engines/engine[5]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>helice-G2</object-name>
-   <property>engines/engine[5]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-10.429 </x-m>
-     <y-m>-19.944 </y-m>
-     <z-m>  6.439 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-G2</object-name>
-   <property>engines/engine[5]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-10.797 </x-m>
-     <y-m>-19.944 </y-m>
-     <z-m>  6.439 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur gauche intérieur droit 7 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-G3</object-name>
-   <property>engines/engine[6]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-G3</object-name>
+    <object-name>bol-G3</object-name>
+    <object-name>propdiscG3</object-name>
+    <object-name>propblurG3</object-name>
+    <property>engines/engine[6]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>-10.900 </x-m>
      <y-m>-13.786 </y-m>
      <z-m>  5.906 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-G3</object-name>
-   <property>engines/engine[6]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>helice-G3</object-name>
-   <property>engines/engine[6]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-10.932 </x-m>
-     <y-m>-13.786 </y-m>
-     <z-m>  5.906 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-G3</object-name>
-   <property>engines/engine[6]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-11.300 </x-m>
-     <y-m>-13.786 </y-m>
-     <z-m>  5.906 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Moteur gauche intérieur 8 -->
- <animation>
-   <type>spin</type>
-   <object-name>disque-G4</object-name>
-   <property>engines/engine[7]/rpm</property>
-   <factor>0.5625</factor>
-   <center>
+  <animation>
+    <type>spin</type>
+    <object-name>helice-G4</object-name>
+    <object-name>bol-G4</object-name>
+    <object-name>propdiscG4</object-name>
+    <object-name>propblurG4</object-name>
+    <property>engines/engine[7]/rpm</property>
+    <factor> 1 </factor>
+    <center>
      <x-m>-11.728 </x-m>
      <y-m> -7.533 </y-m>
      <z-m>  5.421 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
- 
- <animation> 
-   <type>blend</type>
-   <object-name>disque-G4</object-name>
-   <property>engines/engine[7]/rpm</property>
-   <factor>0.00015</factor>
-   <offset>-0.5</offset>
-   <min>0.0</min>
-   <max>0.5</max>
- </animation>
- 
- <animation>
-   <type>spin</type>
-   <object-name>helice-G4</object-name>
-   <property>engines/engine[7]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-11.745 </x-m>
-     <y-m> -7.533 </y-m>
-     <z-m>  5.421 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
-
- <animation>
-   <type>spin</type>
-   <object-name>bol-G4</object-name>
-   <property>engines/engine[7]/rpm</property>
-   <factor>0.5625</factor> 
-   <center>
-     <x-m>-12.113 </x-m>
-     <y-m> -7.533 </y-m>
-     <z-m>  5.421 </z-m>
-   </center>
-   <axis>
-     <x>1</x>
-     <y>0</y>
-     <z>0</z>
-   </axis>
- </animation>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
 
 <!-- Animations des ailerons -->
  <animation>
   <type>rotate</type>
   <object-name>aileron-G</object-name>
   <property>surface-positions/left-aileron-pos-norm</property>
-  <factor>25.0</factor>
+  <factor>-25.0</factor>
   <axis>
    <x1-m>   3.949 </x1-m>
    <y1-m> -26.421 </y1-m>
@@ -1198,14 +1034,14 @@
   <type>rotate</type>
   <object-name>aileron-D</object-name>
   <property>surface-positions/right-aileron-pos-norm</property>
-  <factor>25.0</factor>
+  <factor>-25.0</factor>
   <axis>
-   <x1-m>   3.949 </x1-m>
-   <y1-m>  26.421 </y1-m>
-   <z1-m>   6.718 </z1-m>
-   <x2-m>   3.240 </x2-m>
-   <y2-m>  47.631 </y2-m>
-   <z2-m>   8.182 </z2-m>
+   <x1-m>   3.240 </x1-m>
+   <y1-m>  47.631 </y1-m>
+   <z1-m>   8.182 </z1-m>
+   <x2-m>   3.949 </x2-m>
+   <y2-m>  26.421 </y2-m>
+   <z2-m>   6.718 </z2-m>
   </axis>
  </animation>
 

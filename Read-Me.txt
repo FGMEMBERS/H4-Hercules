@@ -32,12 +32,6 @@ Charge                        : 500-700 passagers
 Some useful keys:
 =================
 
-Ctrl+v : Pilot view
-Ctrl+j : Copilot view
-Ctrl+e : Engineer view
-Ctrl+o : Radio view
-Ctrl+k : Interor back view
-
 Thanks
 ======
 
@@ -82,12 +76,6 @@ Charge utile                  : 500-700 passagers
 
 Quelques touches utiles :
 =========================
-
-Ctrl+v : Vue pilote
-Ctrl+j : Vue copilote
-Ctrl+e : Vue ingénieur moteurs
-Ctrl+o : Vue radio
-Ctrl+k : Vue arrière cabine
 
 Remerciements
 =============

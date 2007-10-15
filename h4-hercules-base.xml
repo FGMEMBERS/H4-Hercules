@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!-- Version           date                       Modèle
-     ==========================================================================================
+     ==================================================================================================
      0.1               Octobre  2006              Ailes par Benjamin DELRUE
      0.3               Novembre 2006              Corps par BARANGER Emmanuel
      0.4               Novembre 2006              Cockpit, Flaps BARANGER Emmanuel, 
@@ -11,136 +11,144 @@
      0.62              Décembre 2006              Manettes des gazs pilote à la souris
      0.65              Décembre 2006              Ajout au poste de l'ingénieur
      0.66              Décembre 2006              Tentative d'utilisation du FDM YASim
-     ==========================================================================================
+     0.67              Octobre  2007              Utilisation du placement sur l'eau de Melchior Franz
+     ==================================================================================================
 -->
 
 <PropertyList>
 
- <sim include="Nasal/H4-Hercules-Views.xml">
+  <sim include="Nasal/H4-Hercules-Views.xml">
 
-  <startup>
-   <splash-texture>Aircraft/H4-Hercules/h4-hercules-splash.rgb</splash-texture>
-  </startup>
+    <startup>
+      <splash-texture>Aircraft/H4-Hercules/h4-hercules-splash.rgb</splash-texture>
+    </startup>
 
-  <presets>
-   <tanks include="Nasal/H4-Hercules-fuel.xml"/>
-   <mooring include="Nasal/H4-Hercules-route.xml"/>
-  </presets>
+    <type type="string">seaplane</type>
 
-  <systems>
-   <electrical>
-    <path>Aircraft/Generic/generic-electrical.xml</path>
-   </electrical>
-  </systems> 
+    <systems>
+      <electrical>
+        <path>Aircraft/Generic/generic-electrical.xml</path>
+      </electrical>
+    </systems> 
 
-  <sound>
-   <audible>true</audible>
-    <path>Aircraft/H4-Hercules/Sounds/h4-hercules-sound.xml</path>
-  </sound>
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/H4-Hercules/Sounds/h4-hercules-sound.xml</path>
+    </sound>
 
-  <model>
-   <path>Aircraft/H4-Hercules/Models/h4-hercules.xml</path>
-  </model> 
+    <model>
+      <path>Aircraft/H4-Hercules/Models/h4-hercules.xml</path>
+    </model> 
 
-  <submodels>
-    <serviceable>true</serviceable>
-    <path>Aircraft/H4-Hercules/Models/Submodels/Wakes/Wakes.xml</path>
-  </submodels>
+    <submodels>
+      <serviceable>true</serviceable>
+      <path>Aircraft/H4-Hercules/Models/Submodels/Wakes/Wakes.xml</path>
+    </submodels>
 
-  <view>
-    <internal archive="y">true</internal>
-    <config>
-      <x-offset-m archive="y">  -0.528 </x-offset-m>
-      <y-offset-m archive="y">   4.337 </y-offset-m>
-      <z-offset-m archive="y"> -13.889 </z-offset-m>
-    </config>
-  </view>
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay> 
 
-  <chase-distance-m type="double" archive="y">-100.00</chase-distance-m>
-  
- </sim>
+    <help>
+      <title>Hughes H4 Hercules</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passanger door</desc>
+      </key>
+    </help>
 
- <nasal>
-  <H4-Hercules>
-   <file>Aircraft/H4-Hercules/Nasal/H4-Hercules.nas</file>
-  </H4-Hercules>
-  <Doors>
-   <file>Aircraft/H4-Hercules/Nasal/H4-Hercules-Doors.nas</file>
-  </Doors>
- </nasal>
+  </sim>
 
- <input>
-  <keyboard include="Nasal/H4-Hercules-keyboard.xml">
-  </keyboard>
- </input>
+  <nasal>
+    <doors>
+      <file>Aircraft/H4-Hercules/Nasal/doors.nas</file>
+    </doors>
+  </nasal>
+
+  <input>
+    <keyboard include="Nasal/H4-Hercules-keyboard.xml">
+    </keyboard>
+  </input>
 
 
-<!-- ============= -->
-<!-- customisation -->
-<!-- ============= -->
+  <!-- ============= -->
+  <!-- customisation -->
+  <!-- ============= -->
 
- <controls>
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="1">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="2">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="3">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="4">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="5">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="6">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+      <engine n="7">
+        <magnetos>3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+        <running>1</running>
+      </engine>
+    </engines>
+  </controls>
+
   <engines>
-   <engine n="0">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="1">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="2">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="3">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="4">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="5">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="6">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
-   <engine n="7">
-    <magnetos>3</magnetos>
-    <propeller-pitch>0.0</propeller-pitch>
-   </engine>
+    <engine n="0">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="1">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="2">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="3">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="4">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="5">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="6">
+      <rpm>10</rpm>
+    </engine>
+    <engine n="7">
+      <rpm>10</rpm>
+    </engine>
   </engines>
- </controls>
-
- <engines>
-  <engine n="0">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="1">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="2">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="3">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="4">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="5">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="6">
-   <rpm>10</rpm>
-  </engine>
-  <engine n="7">
-   <rpm>10</rpm>
-  </engine>
- </engines>
 
 </PropertyList>

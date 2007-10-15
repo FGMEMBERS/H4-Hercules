@@ -5,7 +5,7 @@
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
  <fileheader>
-  <author> BARANGER / DELRUE / ROBIN / Aeromatic v 0.9 </author>
+  <author> BARANGER / DELRUE / Aeromatic v 0.9 </author>
   <filecreationdate> 16 Décembre 2006 </filecreationdate>
   <version> 0.65 </version>
   <description> Hughes H4 Hercules </description>
@@ -210,7 +210,7 @@
             <roll>  0.00 </roll>
             <yaw>   0.00 </yaw>
           </orient>
-	  <sens> 1 </sens>
+	  <sens> -1 </sens>
         </thruster>
       </engine>
 
@@ -264,7 +264,7 @@
             <roll>  0.00 </roll>
             <yaw>   0.00 </yaw>
           </orient>
-	  <sens> 1 </sens>
+	  <sens> -1 </sens>
         </thruster>
       </engine>
 
@@ -291,7 +291,7 @@
             <roll>  0.00 </roll>
             <yaw>   0.00 </yaw>
           </orient>
-	  <sens> -1 </sens>
+	  <sens> 1 </sens>
         </thruster>
       </engine>
 
@@ -345,7 +345,7 @@
             <roll>  0.00 </roll>
             <yaw>   0.00 </yaw>
           </orient>
-	  <sens> -1 </sens>
+	  <sens> 1 </sens>
         </thruster>
       </engine>
 
@@ -525,15 +525,6 @@
       <output>fcs/left-aileron-pos-rad</output>
    </aerosurface_scale>
 
-   <aerosurface_scale name="Right Aileron Control">
-      <input>fcs/roll-trim-sum</input>
-      <range>
-        <min> -0.35 </min>
-        <max>  0.35 </max>
-      </range>
-      <output>fcs/right-aileron-pos-rad</output>
-   </aerosurface_scale>
-
    <aerosurface_scale name="left aileron normalization">
       <input>fcs/left-aileron-pos-rad</input>
       <domain>
@@ -541,10 +532,19 @@
         <max>  0.35 </max>
       </domain>
       <range>
-        <min> -1 </min>
-        <max>  1 </max>
+        <min>  1 </min>
+        <max> -1 </max>
       </range>
       <output>fcs/left-aileron-pos-norm</output>
+   </aerosurface_scale>
+
+   <aerosurface_scale name="Right Aileron Control">
+      <input>fcs/roll-trim-sum</input>
+      <range>
+        <min> -0.35 </min>
+        <max>  0.35 </max>
+      </range>
+      <output>fcs/right-aileron-pos-rad</output>
    </aerosurface_scale>
 
    <aerosurface_scale name="right aileron normalization">
