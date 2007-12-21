@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <object-name>tableau</object-name>
+    <object-name>manette1-ing</object-name>
+    <object-name>manette2-ing</object-name>
+    <object-name>manette3-ing</object-name>
+    <object-name>manette4-ing</object-name>
+    <object-name>manette5-ing</object-name>
+    <object-name>manette6-ing</object-name>
+    <object-name>manette7-ing</object-name>
+    <object-name>manette8-ing</object-name>
+    <object-name>bouton1</object-name>
+    <object-name>bouton2</object-name>
+    <object-name>bouton3</object-name>
+    <object-name>bouton4</object-name>
+    <object-name>bouton5</object-name>
+    <object-name>bouton6</object-name>
+    <object-name>bouton7</object-name>
+    <object-name>bouton8</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+  <!-- Zones de clique souris -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel5/Mouse/zone.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Les manettes des gaz -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette1-ing</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette2-ing</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette3-ing</object-name>
+    <property>controls/engines/engine[2]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette4-ing</object-name>
+    <property>controls/engines/engine[3]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette5-ing</object-name>
+    <property>controls/engines/engine[4]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette6-ing</object-name>
+    <property>controls/engines/engine[5]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette7-ing</object-name>
+    <property>controls/engines/engine[6]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>manette8-ing</object-name>
+    <property>controls/engines/engine[7]/throttle</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.068 </y-m>
+      <z-m> -0.111 </z-m>
+    </center>
+    <axis>
+      <x> -1.000 </x>
+      <y>  0.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

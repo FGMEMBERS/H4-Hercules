@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <object-name>planchet</object-name>
+    <object-name>cadrans03</object-name>
+    <object-name>cadrans04</object-name>
+    <object-name>tourvitres</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+  <!-- Panel du pilote -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel1/panel.xml</path>
+    <offsets>
+      <x-m> -6.713 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m>  0.389 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Panel des manettes pilote & copilote -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel2/panel.xml</path>
+    <offsets>
+      <x-m> -6.516 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.303 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Panel central principal -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel3/panel.xml</path>
+    <offsets>
+      <x-m> -6.097 </x-m>
+      <y-m>  0.003 </y-m>
+      <z-m>  0.336 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Panel co pilote -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel4/panel.xml</path>
+    <offsets>
+      <x-m> -6.715 </x-m>
+      <y-m>  0.492 </y-m>
+      <z-m>  0.385 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Panel des manettes ingénieur moteur -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel5/panel.xml</path>
+    <offsets>
+      <x-m> -4.305 </x-m>
+      <y-m>  1.637 </y-m>
+      <z-m> -0.546 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Panel des moteurs -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel6/panel.xml</path>
+    <offsets>
+      <x-m> -4.453 </x-m>
+      <y-m>  1.703 </y-m>
+      <z-m> -0.128 </z-m>
+      <roll-deg>    8.200 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Second panel des moteurs -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel7/panel.xml</path>
+    <offsets>
+      <x-m> -3.917 </x-m>
+      <y-m>  1.626 </y-m>
+      <z-m> -0.314 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 41.420 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Troisième panel des moteurs -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel8/panel.xml</path>
+    <offsets>
+      <x-m> -3.797 </x-m>
+      <y-m>  1.327 </y-m>
+      <z-m> -0.378 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Le bar de Xiii -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Bar/bar.xml</path>
+    <offsets>
+      <x-m> -3.506 </x-m>
+      <y-m> -2.297 </y-m>
+      <z-m> -0.808 </z-m>
+      <roll-deg>       0.000 </roll-deg>
+      <heading-deg> -150.000 </heading-deg>
+      <pitch-deg>      0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Le siège du pilote -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
+    <offsets>
+      <x-m> -5.968 </x-m>
+      <y-m> -0.567 </y-m>
+      <z-m>  0.267 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Le siège du copilote -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
+    <offsets>
+      <x-m> -5.968 </x-m>
+      <y-m>  0.567 </y-m>
+      <z-m>  0.267 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Le siège de l'ingénieur moteur -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
+    <offsets>
+      <x-m> -4.646 </x-m>
+      <y-m>  1.243 </y-m>
+      <z-m> -0.462 </z-m>
+      <roll-deg>       0.000 </roll-deg>
+      <heading-deg> -102.000 </heading-deg>
+      <pitch-deg>      0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Le siège du radio -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
+    <offsets>
+      <x-m> -4.636 </x-m>
+      <y-m> -1.334 </y-m>
+      <z-m> -0.462 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <heading-deg> 90.000 </heading-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- La table du radio -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Other/table.xml</path>
+    <offsets>
+      <x-m> -4.753 </x-m>
+      <y-m> -2.111 </y-m>
+      <z-m> -0.548 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Les volants -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Yokes/yokes.xml</path>
+    <offsets>
+      <x-m> -6.306 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.253 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

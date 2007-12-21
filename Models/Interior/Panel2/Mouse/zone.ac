@@ -1,0 +1,697 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "jaune" rgb 0.895039 1 0.53582 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+OBJECT world
+kids 37
+OBJECT poly
+name "AllDownCopilote"
+data 15
+AllDownCopilote
+crease 30.000000
+numvert 4
+0.069751 -0.007313 -0.364703
+0.069751 -0.007313 -0.251297
+0.067783 0.007472 -0.251297
+0.067783 0.007472 -0.364703
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "AllDownPilote"
+data 13
+AllDownPilote
+crease 30.000000
+numvert 4
+0.069751 -0.007313 0.251601
+0.069751 -0.007313 0.365006
+0.067783 0.007472 0.365006
+0.067783 0.007472 0.251601
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "AllUpCopilote"
+data 13
+AllUpCopilote
+crease 30.000000
+numvert 4
+-0.005484 0.067036 -0.364703
+-0.005484 0.067036 -0.251297
+-0.020315 0.065443 -0.251297
+-0.020315 0.065443 -0.364703
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "AllUpPilote"
+data 11
+AllUpPilote
+crease 30.000000
+numvert 4
+-0.005484 0.067036 0.251601
+-0.005484 0.067036 0.365006
+-0.020315 0.065443 0.365006
+-0.020315 0.065443 0.251601
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+3 0 0
+2 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "AllUpPilote.016"
+data 15
+AllUpPilote.024
+crease 30.000000
+numvert 0
+numsurf 0
+kids 0
+OBJECT poly
+name "Down0Copilote"
+data 13
+Down0Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.350527
+0.067737 0.007998 -0.350527
+0.062946 0.022123 -0.364703
+0.067737 0.007998 -0.364703
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+2 0 0
+0 0 0
+1 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down0Pilote"
+data 11
+Down0Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.350527
+0.067737 0.007998 0.350527
+0.062946 0.022123 0.364703
+0.067737 0.007998 0.364703
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down1Copilote"
+data 13
+Down1Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.350527
+0.062946 0.022123 -0.336351
+0.067737 0.007998 -0.336351
+0.067737 0.007998 -0.350527
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down1Pilote"
+data 11
+Down1Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.336351
+0.062946 0.022123 0.350527
+0.067737 0.007998 0.350527
+0.067737 0.007998 0.336351
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down2Copilote"
+data 13
+Down2Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.336351
+0.062946 0.022123 -0.322176
+0.067737 0.007998 -0.322176
+0.067737 0.007998 -0.336351
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down2Pilote"
+data 11
+Down2Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.322176
+0.062946 0.022123 0.336351
+0.067737 0.007998 0.336351
+0.067737 0.007998 0.322176
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down3Copilote"
+data 13
+Down3Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.322176
+0.062946 0.022123 -0.308
+0.067737 0.007998 -0.308
+0.067737 0.007998 -0.322176
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down3Pilote"
+data 11
+Down3Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.308
+0.062946 0.022123 0.322176
+0.067737 0.007998 0.322176
+0.067737 0.007998 0.308
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down4Copilote"
+data 13
+Down4Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.308
+0.062946 0.022123 -0.293824
+0.067737 0.007998 -0.293824
+0.067737 0.007998 -0.308
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down4Pilote"
+data 11
+Down4Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.293824
+0.062946 0.022123 0.308
+0.067737 0.007998 0.308
+0.067737 0.007998 0.293824
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down5Copilote"
+data 13
+Down5Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.293824
+0.062946 0.022123 -0.279649
+0.067737 0.007998 -0.279649
+0.067737 0.007998 -0.293824
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down5Pilote"
+data 11
+Down5Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.279649
+0.062946 0.022123 0.293824
+0.067737 0.007998 0.293824
+0.067737 0.007998 0.279649
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down6Copilote"
+data 13
+Down6Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.279649
+0.062946 0.022123 -0.265473
+0.067737 0.007998 -0.265473
+0.067737 0.007998 -0.279649
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down6Pilote"
+data 11
+Down6Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.265473
+0.062946 0.022123 0.279649
+0.067737 0.007998 0.279649
+0.067737 0.007998 0.265473
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Down7Copilote"
+data 13
+Down7Copilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 -0.265473
+0.067737 0.007998 -0.265473
+0.062946 0.022123 -0.251297
+0.067737 0.007998 -0.251297
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down7Pilote"
+data 11
+Down7Pilote
+crease 30.000000
+numvert 4
+0.062946 0.022123 0.265473
+0.067737 0.007998 0.265473
+0.062946 0.022123 0.251297
+0.067737 0.007998 0.251297
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+2 0 0
+0 0 0
+1 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up0Copilote"
+data 11
+Up0Copilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 -0.350527
+0.00943 0.065221 -0.350527
+-0.00537 0.067075 -0.364703
+0.00943 0.065221 -0.364703
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+2 0 0
+0 0 0
+1 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up0Pilote"
+data 9
+Up0Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.350831
+0.00943 0.065221 0.350831
+-0.00537 0.067075 0.365006
+0.00943 0.065221 0.365006
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up1Copilote"
+data 11
+Up1Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.350527
+0.00943 0.065221 -0.336351
+-0.00537 0.067075 -0.336351
+-0.00537 0.067075 -0.350527
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+0 0 0
+3 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Up1Pilote"
+data 9
+Up1Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.336655
+-0.00537 0.067075 0.350831
+0.00943 0.065221 0.350831
+0.00943 0.065221 0.336655
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up2Copilote"
+data 11
+Up2Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.336351
+0.00943 0.065221 -0.322176
+-0.00537 0.067075 -0.322176
+-0.00537 0.067075 -0.336351
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+0 0 0
+3 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Up2Pilote"
+data 9
+Up2Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.322479
+-0.00537 0.067075 0.336655
+0.00943 0.065221 0.336655
+0.00943 0.065221 0.322479
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up3Copilote"
+data 11
+Up3Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.322176
+0.00943 0.065221 -0.308
+-0.00537 0.067075 -0.308
+-0.00537 0.067075 -0.322176
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+0 0 0
+3 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Up3Pilote"
+data 9
+Up3Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.308304
+-0.00537 0.067075 0.322479
+0.00943 0.065221 0.322479
+0.00943 0.065221 0.308304
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up4Copilote"
+data 11
+Up4Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.308
+0.00943 0.065221 -0.293824
+-0.00537 0.067075 -0.293824
+-0.00537 0.067075 -0.308
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+0 0 0
+3 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Up4Pilote"
+data 9
+Up4Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.294128
+-0.00537 0.067075 0.308303
+0.00943 0.065221 0.308304
+0.00943 0.065221 0.294128
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up5Copilote"
+data 11
+Up5Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.293824
+0.00943 0.065221 -0.279649
+-0.00537 0.067075 -0.279649
+-0.00537 0.067075 -0.293824
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+0 0 0
+3 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Up5Pilote"
+data 9
+Up5Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.279952
+-0.00537 0.067075 0.294128
+0.00943 0.065221 0.294128
+0.00943 0.065221 0.279952
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up6Copilote"
+data 11
+Up6Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.279649
+0.00943 0.065221 -0.265473
+-0.00537 0.067075 -0.265473
+-0.00537 0.067075 -0.279649
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+1 0 0
+0 0 0
+3 0 0
+2 0 0
+kids 0
+OBJECT poly
+name "Up6Pilote"
+data 9
+Up6Pilote
+crease 30.000000
+numvert 4
+-0.00537 0.067075 0.265776
+-0.00537 0.067075 0.279952
+0.00943 0.065221 0.279952
+0.00943 0.065221 0.265776
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+1 0 0
+2 0 0
+3 0 0
+kids 0
+OBJECT poly
+name "Up7Copilote"
+data 11
+Up7Copilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 -0.251297
+-0.00537 0.067075 -0.251297
+0.00943 0.065221 -0.265473
+-0.00537 0.067075 -0.265473
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up7Pilote"
+data 9
+Up7Pilote
+crease 30.000000
+numvert 4
+0.00943 0.065221 0.251601
+-0.00537 0.067075 0.251601
+0.00943 0.065221 0.265776
+-0.00537 0.067075 0.265776
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+2 0 0
+0 0 0
+1 0 0
+3 0 0
+kids 0

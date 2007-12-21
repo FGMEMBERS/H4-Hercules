@@ -1,0 +1,97 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "ac3dmat1" rgb 1 1 1 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+MATERIAL "ac3dmat0" rgb 0 0 0 amb 0.2 0.2 0.2 emis 0 0 0 spec 0 0 0 shi 10 trans 0
+OBJECT world
+kids 3
+OBJECT poly
+name "face"
+data 8
+Mesh.001
+texture "flaps.rgb"
+texrep 1 1
+crease 45
+numvert 4
+0.000505 -0.01929 -0.01808
+0.000505 -0.01929 0.021125
+0.000505 0.019915 0.021125
+0.000505 0.019915 -0.01808
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 1.0 5.96045985901e-08
+3 1.0 1.0
+2 0.0 1.0
+1 2.98022992951e-08 0.0
+kids 0
+OBJECT poly
+name "box"
+data 4
+Mesh
+crease 45
+numvert 8
+-0.022065 -0.01929 -0.01808
+0.000505 -0.01929 -0.01808
+0.000505 -0.01929 0.021125
+-0.022065 -0.01929 0.021125
+-0.022065 0.019915 0.021125
+0.000505 0.019915 0.021125
+0.000505 0.019915 -0.01808
+-0.022065 0.019915 -0.01808
+numsurf 4
+SURF 0x20
+mat 2
+refs 4
+0 1.0 1.0
+7 0.0 1.0
+6 0.0 0.0
+1 1.0 0.0
+SURF 0x20
+mat 2
+refs 4
+4 0.0 0.0
+3 1.0 0.0
+2 1.0 1.0
+5 0.0 1.0
+SURF 0x20
+mat 2
+refs 4
+7 0.0 0.0
+4 1.0 0.0
+5 1.0 1.0
+6 0.0 1.0
+SURF 0x20
+mat 2
+refs 4
+0 0.0 0.0
+1 1.0 0.0
+2 1.0 1.0
+3 0.0 1.0
+kids 0
+OBJECT poly
+name "needle"
+data 8
+Mesh.002
+crease 45
+numvert 5
+0.001461 0.004155 -0.004858
+0.001461 0.004155 0.004689
+0.001461 0.001835 0.004689
+0.001461 0.001835 -0.004858
+0.001461 0.002923 -0.010204
+numsurf 2
+SURF 0x20
+mat 1
+refs 4
+0 1.0 1.0
+1 0.0 1.0
+2 0.0 0.0
+3 1.0 0.0
+SURF 0x20
+mat 1
+refs 3
+4 0.0 0.0
+0 1.0 1.0
+3 1.0 0.0
+kids 0

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>bar.ac</path>
+
+  <animation>
+    <object-name>bar1</object-name>
+    <object-name>bar2</object-name>
+    <object-name>bar3</object-name>
+    <object-name>bar4</object-name>
+    <object-name>bar5</object-name>
+    <object-name>bar6</object-name>
+    <object-name>bar7</object-name>
+    <object-name>liquides</object-name>
+
+    <!-- transparent objects -->
+    <object-name>verres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verres</object-name>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,309 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "jaune" rgb 0.895039 1 0.53582 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+OBJECT world
+kids 16
+OBJECT poly
+name "Down0Ing"
+data 8
+Down0Ing
+crease 30.000000
+numvert 4
+-0.409883 0.002095 0.000559
+-0.409882 0.005969 -0.007519
+-0.384733 0.002095 0.000559
+-0.384733 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down1Ing"
+data 8
+Down1Ing
+crease 30.000000
+numvert 4
+-0.325575 0.002095 0.000559
+-0.325575 0.005969 -0.007519
+-0.300425 0.002095 0.000559
+-0.300425 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down2Ing"
+data 8
+Down2Ing
+crease 30.000000
+numvert 4
+-0.240575 0.002095 0.000559
+-0.240575 0.005969 -0.007519
+-0.215425 0.002095 0.000559
+-0.215425 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down3Ing"
+data 8
+Down3Ing
+crease 30.000000
+numvert 4
+-0.156575 0.002095 0.000559
+-0.156575 0.005969 -0.007519
+-0.131425 0.002095 0.000559
+-0.131425 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down4Ing"
+data 8
+Down4Ing
+crease 30.000000
+numvert 4
+-0.047425 0.005969 -0.007519
+-0.047425 0.002095 0.000559
+-0.072575 0.005969 -0.007519
+-0.072575 0.002095 0.000559
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down5Ing"
+data 8
+Down5Ing
+crease 30.000000
+numvert 4
+0.012425 0.002095 0.000559
+0.012425 0.005969 -0.007519
+0.037575 0.002095 0.000559
+0.037575 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down6Ing"
+data 8
+Down6Ing
+crease 30.000000
+numvert 4
+0.097425 0.002095 0.000559
+0.097425 0.005969 -0.007519
+0.122575 0.002095 0.000559
+0.122575 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Down7Ing"
+data 8
+Down7Ing
+crease 30.000000
+numvert 4
+0.181425 0.002095 0.000559
+0.181425 0.005969 -0.007519
+0.206575 0.002095 0.000559
+0.206575 0.005969 -0.007519
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up0Ing"
+data 6
+Up0Ing
+crease 30.000000
+numvert 4
+-0.409883 0.017015 -0.081007
+-0.409882 0.016752 -0.089961
+-0.384733 0.017015 -0.081007
+-0.384733 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up1Ing"
+data 6
+Up1Ing
+crease 30.000000
+numvert 4
+-0.325575 0.017015 -0.081007
+-0.325575 0.016752 -0.089961
+-0.300425 0.017015 -0.081007
+-0.300425 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up2Ing"
+data 6
+Up2Ing
+crease 30.000000
+numvert 4
+-0.240575 0.017015 -0.081007
+-0.240575 0.016752 -0.089961
+-0.215425 0.017015 -0.081007
+-0.215425 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up3Ing"
+data 6
+Up3Ing
+crease 30.000000
+numvert 4
+-0.156575 0.017015 -0.081007
+-0.156575 0.016752 -0.089961
+-0.131425 0.017015 -0.081007
+-0.131425 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up4Ing"
+data 6
+Up4Ing
+crease 30.000000
+numvert 4
+-0.072575 0.017015 -0.081007
+-0.072575 0.016752 -0.089961
+-0.047425 0.017015 -0.081007
+-0.047425 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up5Ing"
+data 6
+Up5Ing
+crease 30.000000
+numvert 4
+0.012425 0.017015 -0.081007
+0.012425 0.016752 -0.089961
+0.037575 0.017015 -0.081007
+0.037575 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up6Ing"
+data 6
+Up6Ing
+crease 30.000000
+numvert 4
+0.097425 0.017015 -0.081007
+0.097425 0.016752 -0.089961
+0.122575 0.017015 -0.081007
+0.122575 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
+OBJECT poly
+name "Up7Ing"
+data 6
+Up7Ing
+crease 30.000000
+numvert 4
+0.181425 0.017015 -0.081007
+0.181425 0.016752 -0.089961
+0.206575 0.017015 -0.081007
+0.206575 0.016752 -0.089961
+numsurf 1
+SURF 0x20
+mat 1
+refs 4
+0 0 0
+2 0 0
+3 0 0
+1 0 0
+kids 0
