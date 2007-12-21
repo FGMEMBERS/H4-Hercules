@@ -4,9 +4,7 @@
 
   <chase-distance-m type="double" archive="y">-100.00</chase-distance-m>
 
-
   <!-- pilot seat in cockpit. CTRL V -->
-
   <view>
     <internal archive="y">true</internal>
     <config>
@@ -24,10 +22,9 @@
       <back-right-direction-deg type="double">225</back-right-direction-deg>
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
-      <!-- x/y/z == right/up/back -->
-      <x-offset-m archive="y">  -0.528 </x-offset-m>
-      <y-offset-m archive="y">   4.337 </y-offset-m>
-      <z-offset-m archive="y"> -13.889 </z-offset-m>
+      <x-offset-m archive="y">  -0.528 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">   6.337 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.889 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>-15</pitch-offset-deg>
     </config>
   </view>
@@ -63,10 +60,9 @@
       <back-right-direction-deg type="double">225</back-right-direction-deg>
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
-      <!-- x/y/z == right/up/back CTRL E -->
-      <x-offset-m archive="y">  1.155 </x-offset-m>
-      <y-offset-m archive="y">  3.525 </y-offset-m> <!-- head below the window -->
-      <z-offset-m archive="y">-12.325 </z-offset-m> <!-- behind the rear windows, before the wing door -->
+      <x-offset-m archive="y">  1.155 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  5.525 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y">-12.325 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>-4</pitch-offset-deg>
       <heading-offset-deg type="double">270</heading-offset-deg> <!-- parallel to the panel -->
     </config>
@@ -91,10 +87,9 @@
       <back-right-direction-deg type="double">225</back-right-direction-deg>
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
-      <!-- x/y/z == right/up/back CTRL O -->
-      <x-offset-m archive="y">  -0.922 </x-offset-m>
-      <y-offset-m archive="y">   3.525 </y-offset-m> <!-- head below the window -->
-      <z-offset-m archive="y"> -12.291 </z-offset-m> <!-- fowards rear window -->
+      <x-offset-m archive="y">  -0.922 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">   5.525 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -12.291 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>-4</pitch-offset-deg>
       <heading-offset-deg type="double">90</heading-offset-deg> <!-- parallel to the panel -->
     </config>
@@ -119,10 +114,9 @@
       <back-right-direction-deg type="double">225</back-right-direction-deg>
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
-      <!-- x/y/z == right/up/back CTRL J -->
-      <x-offset-m archive="y">   0.593 </x-offset-m> <!-- symmetry with captain -->
-      <y-offset-m archive="y">   4.498 </y-offset-m>
-      <z-offset-m archive="y"> -13.600 </z-offset-m>
+      <x-offset-m archive="y">   0.593 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">   6.498 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.600 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>0</pitch-offset-deg>
       <heading-offset-deg type="double">0</heading-offset-deg> <!-- inside its window -->
     </config>
@@ -147,10 +141,9 @@
       <back-right-direction-deg type="double">225</back-right-direction-deg>
       <right-direction-deg type="double">270</right-direction-deg>
       <front-right-direction-deg type="double">315</front-right-direction-deg>
-      <!-- x/y/z == right/up/back -->
-      <x-offset-m archive="y">   0.00 </x-offset-m> <!-- centered -->
-      <y-offset-m archive="y">  4.329 </y-offset-m>
-      <z-offset-m archive="y">  0.340 </z-offset-m>
+      <x-offset-m archive="y">   0.00 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  6.329 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y">  0.340 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>0</pitch-offset-deg>
       <heading-offset-deg type="double">0</heading-offset-deg> <!-- towards the stern -->
     </config>
