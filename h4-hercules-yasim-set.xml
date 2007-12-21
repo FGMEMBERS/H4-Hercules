@@ -5,7 +5,7 @@
   <sim>
     <description>Hughes H4 Hercules (YASim)</description>
     <status>BD/BE</status>
-    <aircraft-version>0.66</aircraft-version>
+    <aircraft-version>0.68</aircraft-version>
     <flight-model>yasim</flight-model>
     <aero>h4-hercules-yasim</aero>
   </sim>
