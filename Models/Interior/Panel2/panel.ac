@@ -7375,7 +7375,7 @@ OBJECT poly
 name "manette1-copilote"
 data 17
 manette1-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -7634,7 +7634,7 @@ OBJECT poly
 name "manette1-pilote"
 data 15
 manette1-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -7893,7 +7893,7 @@ OBJECT poly
 name "manette2-copilote"
 data 17
 manette2-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -8152,7 +8152,7 @@ OBJECT poly
 name "manette2-pilote"
 data 15
 manette2-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -8411,7 +8411,7 @@ OBJECT poly
 name "manette3-copilote"
 data 17
 manette3-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -8670,7 +8670,7 @@ OBJECT poly
 name "manette3-pilote"
 data 15
 manette3-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -8929,7 +8929,7 @@ OBJECT poly
 name "manette4-copilote"
 data 17
 manette4-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -9188,7 +9188,7 @@ OBJECT poly
 name "manette4-pilote"
 data 15
 manette4-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -9447,7 +9447,7 @@ OBJECT poly
 name "manette5-copilote"
 data 17
 manette5-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -9706,7 +9706,7 @@ OBJECT poly
 name "manette5-pilote"
 data 15
 manette5-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -9965,7 +9965,7 @@ OBJECT poly
 name "manette6-copilote"
 data 17
 manette6-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -10224,7 +10224,7 @@ OBJECT poly
 name "manette6-pilote"
 data 15
 manette6-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -10483,7 +10483,7 @@ OBJECT poly
 name "manette7-copilote"
 data 17
 manette7-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -10742,7 +10742,7 @@ OBJECT poly
 name "manette7-pilote"
 data 15
 manette7-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -11001,7 +11001,7 @@ OBJECT poly
 name "manette8-copilote"
 data 17
 manette8-copilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -11260,7 +11260,7 @@ OBJECT poly
 name "manette8-pilote"
 data 15
 manette8-pilote
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 34
@@ -11519,7 +11519,7 @@ OBJECT poly
 name "manettes"
 data 8
 manettes
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 612
@@ -16979,7 +16979,7 @@ OBJECT poly
 name "soustableau7"
 data 12
 soustableau7
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -17071,7 +17071,7 @@ OBJECT poly
 name "tableau6"
 data 8
 tableau6
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 73
@@ -17528,7 +17528,7 @@ OBJECT poly
 name "tableau7"
 data 8
 tableau7
-texture "manettes.rgb"
+texture "manettes.png"
 texrep 1 1
 crease 30.000000
 numvert 248

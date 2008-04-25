@@ -24,7 +24,7 @@
   </model>
 
   <model>
-    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Altimeter/altimetre.xml</path>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Altimeter/altimeter.xml</path>
     <offsets>
       <x-m> 0.021 </x-m>
       <y-m> 0.017 </y-m>
@@ -42,7 +42,7 @@
   </model>
 
   <model>
-    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/AirSpeed/vitesse.xml</path>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/AirSpeed/airspeed.xml</path>
     <offsets>
       <x-m>  0.021 </x-m>
       <y-m> -0.033 </y-m>

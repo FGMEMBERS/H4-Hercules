@@ -5,23 +5,24 @@
      0.1               Octobre  2006              Ailes par Benjamin DELRUE
      0.3               Novembre 2006              Corps par BARANGER Emmanuel
      0.4               Novembre 2006              Cockpit, Flaps BARANGER Emmanuel, 
-                                                  FDM ROBIN GÃ©rard
+                                                  FDM JSBSIM ROBIN Gérard
      0.5               Novembre 2006              Textures et volets BARANGER Emmanuel
-     0.6               DÃ©cembre 2006              AmÃ©liorations diverses
-     0.62              DÃ©cembre 2006              Manettes des gazs pilote Ã  la souris
-     0.65              DÃ©cembre 2006              Ajout au poste de l'ingÃ©nieur
-     0.66              DÃ©cembre 2006              Tentative d'utilisation du FDM YASim
+     0.6               Décembre 2006              Améliorations diverses
+     0.62              Décembre 2006              Manettes des gazs pilote Ã  la souris
+     0.65              Décembre 2006              Ajout au poste de l'ingÃ©nieur
+     0.66              Décembre 2006              Tentative d'utilisation du FDM YASim
      0.67              Octobre  2007              Utilisation du placement sur l'eau de Melchior Franz
-     0.68              DÃ©cembre 2007              RÃ©organisation des fichiers et optimisation des textures
+     0.68              Décembre 2007              Réorganisation des fichiers et optimisation des textures
+     0.8               Avril    2008              Fichiers images en PNG, réorganisation des moteurs
      ==================================================================================================
 -->
 
 <PropertyList>
 
-  <sim include="Nasal/H4-Hercules-Views.xml">
+  <sim include="Nasal/views.xml">
 
     <startup>
-      <splash-texture>Aircraft/H4-Hercules/h4-hercules-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/H4-Hercules/h4-hercules-splash.png</splash-texture>
     </startup>
 
     <type type="string">seaplane</type>

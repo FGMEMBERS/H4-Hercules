@@ -8,7 +8,7 @@ OBJECT poly
 name "bouton1"
 data 7
 bouton1
-texture "panel3.rgb"
+texture "panel3.png"
 texrep 1 1
 crease 30.000000
 numvert 59
@@ -301,7 +301,7 @@ OBJECT poly
 name "bouton2"
 data 7
 bouton2
-texture "panel3.rgb"
+texture "panel3.png"
 texrep 1 1
 crease 30.000000
 numvert 59
@@ -594,7 +594,7 @@ OBJECT poly
 name "tableau"
 data 7
 tableau
-texture "panel3.rgb"
+texture "panel3.png"
 texrep 1 1
 crease 30.000000
 numvert 24

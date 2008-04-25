@@ -4,8 +4,9 @@
 
   <sim>
     <description>Hughes H4 Hercules (JSBSim)</description>
-    <status>BD/BE</status>
-    <aircraft-version>0.68</aircraft-version>
+    <author>Emmanuel BARANGER (3D/FDM), Benjamin DELRUE (3D)</author>
+    <status>Beta 0.8</status>
+    <aircraft-version>0.8</aircraft-version>
     <flight-model>jsb</flight-model>
     <aero>h4-hercules-jsbsim</aero>
   </sim>
