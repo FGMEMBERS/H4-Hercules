@@ -4,9 +4,9 @@
 
   <sim>
     <description>Hughes H4 Hercules (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Benjamin DELRUE (3D)</author>
-    <status>Beta 0.8</status>
-    <aircraft-version>0.8</aircraft-version>
+    <author>Emmanuel BARANGER (3D), Benjamin DELRUE (3D), Pierre GEOFFROY (FDM)</author>
+    <status>Beta 0.9</status>
+    <aircraft-version>0.9</aircraft-version>
     <flight-model>yasim</flight-model>
     <aero>h4-hercules-yasim</aero>
   </sim>

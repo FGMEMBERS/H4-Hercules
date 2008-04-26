@@ -14,12 +14,15 @@
      0.67              Octobre  2007              Utilisation du placement sur l'eau de Melchior Franz
      0.68              Décembre 2007              Réorganisation des fichiers et optimisation des textures
      0.8               Avril    2008              Fichiers images en PNG, réorganisation des moteurs
+     0.9               Avril    2008              Nouveau FDM Yasim par Pierre GEOFFROY
      ==================================================================================================
 -->
 
 <PropertyList>
 
   <sim include="Nasal/views.xml">
+
+    <fuel-fraction>0.1</fuel-fraction>
 
     <startup>
       <splash-texture>Aircraft/H4-Hercules/h4-hercules-splash.png</splash-texture>
