@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 
+<!-- FDM by Pierre GEOFFROY / 2008 -->
+
 <airplane mass="270066"> 
 
   <approach speed="84" aoa="4" fuel="0.2" > 
