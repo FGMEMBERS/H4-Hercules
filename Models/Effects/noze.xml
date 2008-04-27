@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <particlesystem>
+    <name>Noze</name>
+
+    <texture>wake.png</texture>
+
+    <emissive>false</emissive>
+    <lighting>true</lighting>
+        
+    <attach>world</attach>
+        
+    <placer>
+      <type>point</type>
+    </placer>
+        
+    <shooter>
+      <theta-min-deg>84</theta-min-deg>
+      <theta-max-deg>86</theta-max-deg>
+      <phi-min-deg>-1.5</phi-min-deg>
+      <phi-max-deg>1.5</phi-max-deg>
+      <speed>
+        <value>10</value>
+        <spread>2.5</spread>
+      </speed>
+      <rotspeed>
+        <minx>5</minx>
+        <miny>5</miny>
+        <minz>5</minz>
+        <maxx>25</maxx>
+        <maxy>25</maxy>
+        <maxz>25</maxz>
+      </rotspeed>
+    </shooter>
+        
+    <counter>
+      <pps>
+        <value>30</value>
+        <spread>5</spread>
+      </pps>         
+      <condition>
+        <property>/gear/gear[0]/wow</property>
+      </condition>            
+    </counter>
+        
+    <align>billboard</align>
+        
+    <particle>
+      <startcolor>
+        <red>
+          <value>1.0</value>
+        </red>
+        <green>
+          <value>1.0</value>
+        </green>
+        <blue>
+          <value>1.0</value>
+        </blue>
+        <alpha>
+          <value>0.5</value>
+        </alpha>
+      </startcolor>
+
+      <endcolor>
+        <red>
+          <value>1.0</value>
+        </red>
+        <green>
+          <value>1.0</value>
+        </green>
+        <blue>
+          <value>1.0</value>
+        </blue>
+        <alpha>
+          <value>1.0</value>
+        </alpha>
+      </endcolor>
+
+      <startsize>
+        <value>0.5</value>
+      </startsize>
+
+      <endsize>
+        <value>5</value>
+      </endsize>
+
+      <life-sec>
+        <value>2</value>
+      </life-sec>
+
+      <mass-kg>0.20</mass-kg>
+      <radius-m>0.3</radius-m>
+    </particle>
+        
+    <program>
+      <fluid>water</fluid>
+      <gravity>enabled</gravity>
+      <wind>disabled</wind>
+    </program>
+        
+  </particlesystem>
+
+</PropertyList>
+

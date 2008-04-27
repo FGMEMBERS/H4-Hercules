@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- FDM by Pierre GEOFFROY / 2008 -->
+<!-- Emmanuel BARANGER
+     Pierre GEOFFROY                                                  2008 -->
 
 <airplane mass="270066"> 
 
@@ -64,9 +65,7 @@
     
   <fuselage ax="21.370" ay="0" az="2.655" bx="-45.402" by="0" bz="6.348" width="7.156" taper="0.068" midpoint="0.33"/>
  
-  <wing x="-0.261" 
-        y="2.387"
-        z="5.031"
+  <wing x="-0.261" y="2.387" z="5.031"
         length="45.921"
         chord="15.722"
         taper="0.415"
@@ -86,12 +85,10 @@
         <control-speed control="FLAP1" transition-time="0.5"/>
   </wing>
     
-  <hstab x="-36.591" 
-         y="0.00" 
-	   z="8.00"
-	   length="15.536"
-	   chord="9.22"
-	   taper="0.503">
+  <hstab x="-36.591" y="0.00" z="8.00"
+	 length="15.536"
+	 chord="9.22"
+	 taper="0.503">
          <stall aoa="14" width="4" peak="1.5"/>
          <flap0 start="0.05" end="0.95" lift="1.5" drag="1.2"/>
          <control-input axis="/controls/flight/elevator" control="FLAP0" />
@@ -99,9 +96,7 @@
          <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
   </hstab>
     
-  <vstab x="-38.147" 
-         y="0" 
-	   z="14.146"
+  <vstab x="-38.147" y="0" z="14.146"
          length="15.450"
          chord="14.263"
          taper="0.32"
@@ -119,26 +114,24 @@
        Left wing 0 1 2 3 ....... 7 6 5 4 right wing -->
   
   <!-- #0 engine -->
-  <propeller x="8.637"
-           y="26.156"
-	     z="6.702"
-           mass="4090"
+  <propeller x="8.637" y="26.156" z="6.702"
+             mass="4090"
 	     moment="110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="9.945" y="26.156" z="6.773"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -152,26 +145,24 @@
   </propeller>
 
   <!-- #1 engine -->
-  <propeller x="9.508"
-           y="19.935"
-	     z="6.360"
-           mass="4090"
+  <propeller x="9.508" y="19.935" z="6.360"
+             mass="4090"
 	     moment="110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="10.797" y="19.944" z="6.439"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -185,26 +176,24 @@
   </propeller>
   
   <!-- #2 engine -->
-  <propeller x="9.992"
-           y="13.786"
-	     z="5.835"
-           mass="4090"
+  <propeller x="9.992" y="13.786" z="5.835"
+             mass="4090"
 	     moment="110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="11.300" y="13.786" z="5.906"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -218,26 +207,24 @@
   </propeller>
   
   <!-- #3 engine -->
-  <propeller x="10.805"
-           y="7.533"
-	     z="5.350"
-           mass="4090"
+  <propeller x="10.805" y="7.533" z="5.350"
+             mass="4090"
 	     moment="110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="12.113" y="7.533" z="5.421"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -251,26 +238,24 @@
   </propeller>
 
   <!-- #4 engine -->
-  <propeller x="8.637"
-           y="-26.156"
-	     z="6.702"
-           mass="4090"
+  <propeller x="8.637" y="-26.156" z="6.702"
+             mass="4090"
 	     moment="-110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="9.945" y="-26.156" z="6.773"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -284,26 +269,24 @@
   </propeller>
 
   <!-- #5 engine -->
-  <propeller x="9.508"
-           y="-19.935"
-	     z="6.360"
-           mass="4090"
+  <propeller x="9.508" y="-19.935" z="6.360"
+             mass="4090"
 	     moment="-110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="10.797" y="-19.944" z="6.439"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -317,26 +300,24 @@
   </propeller>
   
   <!-- #6 engine -->
-  <propeller x="9.992"
-           y="-13.786"
-	     z="5.835"
-           mass="4090"
+  <propeller x="9.992" y="-13.786" z="5.835"
+             mass="4090"
 	     moment="-110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="11.300" y="-13.786" z="5.906"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -350,26 +331,24 @@
   </propeller>
   
   <!-- #7 engine -->
-  <propeller x="10.805"
-           y="-7.533"
-	     z="5.350"
-           mass="4090"
+  <propeller x="10.805" y="-7.533" z="5.350"
+             mass="4090"
 	     moment="-110"
 	     radius="2.615"
 	     cruise-speed="173"
 	     cruise-rpm="956"
 	     cruise-power="2500"
 	     cruise-alt="5000"
-           takeoff-power="3000"
-           takeoff-rpm="1012"
+             takeoff-power="3000"
+             takeoff-rpm="1012"
 	     min-rpm="210"
 	     max-rpm="1012"
-           fine-stop="0.25"
-           coarse-stop="4"
+             fine-stop="0.25"
+             coarse-stop="4"
 	     gear-ratio="0.375">
     <actionpt x="12.113" y="-7.533" z="5.421"/>
     <piston-engine eng-power="3000"
-                 eng-rpm="2700"
+                   eng-rpm="2700"
 	           displacement="4363"
 	           compression="7"
 	           turbo-mul="1.75"
@@ -383,8 +362,8 @@
   </propeller>
 
 <!-- Main fuselage -->
-<!-- Noze z -1.583 -->
-<gear x="16.796" y="0" z="-1.583" 
+<!-- Noze -->
+<gear x="16.796" y="0" z="-1.690" 
       compression="1.2"  
       spring="15" 
       damp="8" 
@@ -397,8 +376,8 @@
       spring-factor-not-planing="0.2">
 </gear>
 
-<!-- Center z -2.957 -->
-<gear x="-5.572" y="0" z="-2.957" 
+<!-- Center -->
+<gear x="-5.572" y="0" z="-1.994" 
       compression="2.4" 
       spring="6" 
       damp="8" 
@@ -411,8 +390,8 @@
       spring-factor-not-planing="0.3">
 </gear>
 
-<!-- Tail z -1.833 -->
-<gear x="-14.007" y="0" z="-1.833" 
+<!-- Tail -->
+<gear x="-14.007" y="0" z="-0.165" 
       compression="1.1" 
       spring="3" 
       damp="8" 
@@ -426,7 +405,7 @@
 </gear>
 
 <!-- wing floats Left -->
-<gear x="1.550" y="33.989" z="-0.396" 
+<gear x="1.550" y="33.989" z="-0.174" 
       compression="0.3"  
       spring="0.9" 
       damp="10" 
@@ -441,7 +420,7 @@
 </gear>
 
 <!-- wing floats right -->
-<gear x="1.550" y="-33.989" z="-0.396"
+<gear x="1.550" y="-33.989" z="-0.174"
       compression="0.3"  
       spring="0.9" 
       damp="10" 

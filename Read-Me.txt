@@ -36,14 +36,16 @@ Thanks
 ======
 
 Benjamin DELRUE for the superb modeling of the wing of the seaplane
-Authors of FlightGear to allow us to fly free. 
+Authors of FlightGear to allow us to fly free.
+Pierre GEOFFROY for the YASim FDM. 
 
 Thanks with: FABERT Didier to have programmed KFreeFlight 
 
 ===============
 BARANGER Emmanuel
 DELRUE   Benjamin
-February 16, 2006. 
+February 16, 2006.
+April, 25, 2008.
 
 
 [Français]
@@ -80,13 +82,15 @@ Quelques touches utiles :
 Remerciements
 =============
 
-Benjamin DELRUE pour la superbe modÃ©lisation de l'aile de l'hydravion
+Benjamin DELRUE pour la superbe modélisation des ailes de l'hydravion
 Les auteurs de FlightGear pour nous permettre de voler libre.
+Pierre GEOFFROY pour le nouveau FDM YASim
 
-Remerciements Ã  : FABERT Didier pour avoir programmé KFreeFlight
+Remerciements à  : FABERT Didier pour avoir programmé KFreeFlight
 
 ===============
 BARANGER Emmanuel
 DELRUE   Benjamin
 16 Février 2006.
+25 Avril 2008.
 
