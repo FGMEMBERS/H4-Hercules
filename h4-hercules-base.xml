@@ -44,11 +44,6 @@
       <path>Aircraft/H4-Hercules/Models/h4-hercules.xml</path>
     </model> 
 
-    <submodels>
-      <serviceable>true</serviceable>
-      <path>Aircraft/H4-Hercules/Models/Submodels/Wakes/Wakes.xml</path>
-    </submodels>
-
     <multiplay>
       <chat_display>1</chat_display>
     </multiplay> 
