@@ -16,6 +16,7 @@
       <type>point</type>
     </placer>
         
+<!--
     <shooter>
       <theta-min-deg>84</theta-min-deg>
       <theta-max-deg>86</theta-max-deg>
@@ -34,11 +35,30 @@
         <maxz>25</maxz>
       </rotspeed>
     </shooter>
-        
+-->        
+    <shooter>
+      <theta-min-deg>0</theta-min-deg>
+      <theta-max-deg>0</theta-max-deg>
+      <phi-min-deg>0</phi-min-deg>
+      <phi-max-deg>0</phi-max-deg>
+      <speed>
+        <value>10</value>
+        <spread>2.5</spread>
+      </speed>
+      <rotspeed>
+        <minx>0</minx>
+        <miny>0</miny>
+        <minz>0</minz>
+        <maxx>0</maxx>
+        <maxy>0</maxy>
+        <maxz>0</maxz>
+      </rotspeed>
+    </shooter>
+
     <counter>
       <pps>
-        <value>150</value>
-        <spread>0</spread>
+        <value>200</value>
+        <spread>2</spread>
       </pps>         
       <condition>
         <and>
@@ -60,10 +80,10 @@
     <particle>
       <startcolor>
         <red>
-          <value>1.0</value>
+          <value>0.9</value>
         </red>
         <green>
-          <value>1.0</value>
+          <value>0.9</value>
         </green>
         <blue>
           <value>1.0</value>
@@ -89,15 +109,15 @@
       </endcolor>
 
       <startsize>
-        <value>4</value>
+        <value>0.5</value>
       </startsize>
 
       <endsize>
-        <value>5</value>
+        <value>8</value>
       </endsize>
 
       <life-sec>
-        <value>6.0</value>
+        <value>10.0</value>
       </life-sec>
 
       <mass-kg>0.15</mass-kg>

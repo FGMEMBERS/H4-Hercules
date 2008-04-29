@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <!-- Nozer -->
+  <!-- Nozer 
   <model>
     <path>Aircraft/H4-Hercules/Models/Effects/middle.xml</path>
     <offsets>
@@ -13,9 +13,9 @@
       <pitch-deg> -45.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model> 
+  </model> -->
 
-  <!-- Center -->
+  <!-- Center 
   <model>
     <path>Aircraft/H4-Hercules/Models/Effects/middle.xml</path>
     <offsets>
@@ -26,22 +26,22 @@
       <pitch-deg> -45.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model> 
+  </model> -->
 
   <!-- Tail -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Effects/tail.xml</path>
     <offsets>
-      <x-m>  5.572 </x-m>
+      <x-m> 14.000 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.165 </z-m>
+      <z-m> -1.461 </z-m>
       <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
+      <pitch-deg>   0.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
   </model> 
 
-  <!-- Left float -->
+  <!-- Left float 
   <model>
     <path>Aircraft/H4-Hercules/Models/Effects/floatG.xml</path>
     <offsets>
@@ -52,9 +52,9 @@
       <pitch-deg> -45.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model> 
+  </model> -->
 
-  <!-- Right float -->
+  <!-- Right float 
   <model>
     <path>Aircraft/H4-Hercules/Models/Effects/floatD.xml</path>
     <offsets>
@@ -65,7 +65,7 @@
       <pitch-deg> -45.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model> 
+  </model> -->
 
 </PropertyList>
 
