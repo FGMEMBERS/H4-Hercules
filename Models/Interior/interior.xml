@@ -67,7 +67,7 @@
     </offsets>
   </model>
 
-  <!-- Panel des manettes ingÃ©nieur moteur -->
+  <!-- Panel des manettes ingénieur moteur -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Panel5/panel.xml</path>
     <offsets>
@@ -106,7 +106,7 @@
     </offsets>
   </model>
 
-  <!-- TroisiÃ¨me panel des moteurs -->
+  <!-- Troisième panel des moteurs -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Panel8/panel.xml</path>
     <offsets>
@@ -132,7 +132,7 @@
     </offsets>
   </model>
 
-  <!-- Le siÃ¨ge du pilote -->
+  <!-- Le siège du pilote -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
     <offsets>
@@ -145,7 +145,20 @@
     </offsets>
   </model>
 
-  <!-- Le siÃ¨ge du copilote -->
+  <!-- Le pilote -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Pilot/liner_pilot.xml</path>
+    <offsets>
+      <x-m> -6.114 </x-m>
+      <y-m> -0.574 </y-m>
+      <z-m>  0.240 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Le siège du copilote -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
     <offsets>
@@ -158,7 +171,7 @@
     </offsets>
   </model>
 
-  <!-- Le siÃ¨ge de l'ingÃ©nieur moteur -->
+  <!-- Le siège de l'ingénieur moteur -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
     <offsets>
@@ -171,7 +184,7 @@
     </offsets>
   </model>
 
-  <!-- Le siÃ¨ge du radio -->
+  <!-- Le siège du radio -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Other/seat.xml</path>
     <offsets>
