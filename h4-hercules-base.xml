@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<!-- Version           date                       ModÃ¨le
+<!-- Version           date                       Modèle
      ==================================================================================================
      0.1               Octobre  2006              Ailes par Benjamin DELRUE
      0.3               Novembre 2006              Corps par BARANGER Emmanuel
@@ -8,12 +8,13 @@
      0.5               Novembre 2006              Textures et volets BARANGER Emmanuel
      0.6               Décembre 2006              Améliorations diverses
      0.62              Décembre 2006              Manettes des gazs pilote Ã  la souris
-     0.65              Décembre 2006              Ajout au poste de l'ingÃ©nieur
+     0.65              Décembre 2006              Ajout au poste de l'ingénieur
      0.66              Décembre 2006              Tentative d'utilisation du FDM YASim
      0.67              Octobre  2007              Utilisation du placement sur l'eau de Melchior Franz
      0.68              Décembre 2007              Réorganisation des fichiers et optimisation des textures
      0.8               Avril    2008              Fichiers images en PNG, réorganisation des moteurs
      0.9               Avril    2008              Nouveau FDM Yasim par Pierre GEOFFROY
+     1.0               Mars     2009              Mise à jour des couleurs  
      ==================================================================================================
 -->
 
@@ -21,7 +22,7 @@
 
   <sim include="Nasal/views.xml">
 
-    <fuel-fraction>0.1</fuel-fraction>
+    <fuel-fraction>0.3</fuel-fraction>
 
     <startup>
       <splash-texture>Aircraft/H4-Hercules/h4-hercules-splash.png</splash-texture>
@@ -42,10 +43,21 @@
 
     <model>
       <path>Aircraft/H4-Hercules/Models/h4-hercules.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model> 
 
     <multiplay>
       <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
     </multiplay> 
 
     <help>
@@ -60,13 +72,9 @@
       </key>
     </help>
 
-  </sim>
+    <menubar include="Dialogs/h4-hercules-menu.xml"/>
 
-  <nasal>
-    <doors>
-      <file>Aircraft/H4-Hercules/Nasal/doors.nas</file>
-    </doors>
-  </nasal>
+  </sim>
 
   <input>
     <keyboard include="Nasal/H4-Hercules-keyboard.xml">
@@ -149,5 +157,12 @@
       <rpm>10</rpm>
     </engine>
   </engines>
+
+  <nasal>
+    <h4>
+      <file>Aircraft/H4-Hercules/Nasal/doors.nas</file>
+      <file>Aircraft/H4-Hercules/Nasal/liveries.nas</file>
+    </h4>
+  </nasal>
 
 </PropertyList>

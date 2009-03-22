@@ -7,7 +7,6 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>tete</object-name>
-    <object-name>visiere</object-name>
     <object-name>corps</object-name>
     <object-name>brasG</object-name>
     <object-name>brasD</object-name>
@@ -25,26 +24,8 @@
   </animation>
 
   <animation>
-    <name>AnimeTete</name>
-    <object-name>tete</object-name>
-    <object-name>visiere</object-name>
-  </animation>
-
-  <!-- Visière invisible depuis le cockpit -->
-  <animation>
-    <type>select</type>
-    <object-name>visiere</object-name>
-    <condition>
-      <greater-than>
-        <property>sim/current-view/view-number</property>
-        <value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
-
-  <animation>
     <type>rotate</type>
-    <object-name>AnimeTete</object-name>
+    <object-name>tete</object-name>
     <property>controls/flight/elevator</property>
     <factor> -15 </factor> 
     <center>
@@ -61,7 +42,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>AnimeTete</object-name>
+    <object-name>tete</object-name>
     <property>controls/flight/rudder</property>
     <factor>-25</factor>
     <center>
@@ -78,7 +59,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>AnimeTete</object-name>
+    <object-name>tete</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
     <factor> -10.0</factor>
     <center>

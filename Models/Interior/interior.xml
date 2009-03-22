@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Hughes H4 Hercules - 1946 -->
 
@@ -8,11 +8,23 @@
 
   <animation>
     <object-name>planchet</object-name>
-    <object-name>cadrans03</object-name>
-    <object-name>cadrans04</object-name>
     <object-name>tourvitres</object-name>
+    <object-name>plafond</object-name>
 
     <!-- transparent objects -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
   </animation>
 
   <!-- Panel du pilote -->

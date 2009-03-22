@@ -1,6 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
+
+  <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
 
   <view n="100">
     <name>Copilot View</name>
@@ -14,11 +16,12 @@
       <z-offset-m archive="y"> -13.600 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>0</pitch-offset-deg>
       <heading-offset-deg type="double">0</heading-offset-deg> <!-- inside its window -->
+      <default-field-of-view-deg>70</default-field-of-view-deg>
     </config>
   </view>
 
   <view n="101">
-    <name>Enginrer View</name>
+    <name>Enginer View</name>
     <internal archive="y">true</internal>
     <type>lookfrom</type>
     <config>
@@ -29,6 +32,7 @@
       <z-offset-m archive="y">-12.325 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>-4</pitch-offset-deg>
       <heading-offset-deg type="double">270</heading-offset-deg> <!-- parallel to the panel -->
+      <default-field-of-view-deg>50</default-field-of-view-deg>
     </config>
   </view>
 
@@ -44,6 +48,7 @@
       <z-offset-m archive="y"> -12.291 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>-4</pitch-offset-deg>
       <heading-offset-deg type="double">90</heading-offset-deg> <!-- parallel to the panel -->
+      <default-field-of-view-deg>50</default-field-of-view-deg>
     </config>
   </view>
 
@@ -59,6 +64,7 @@
       <z-offset-m archive="y">  0.340 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>0</pitch-offset-deg>
       <heading-offset-deg type="double">0</heading-offset-deg> <!-- towards the stern -->
+      <default-field-of-view-deg>50</default-field-of-view-deg>
     </config>
   </view>
 
@@ -75,6 +81,7 @@
       <x-offset-m archive="y">  0.000 </x-offset-m> <!--Right-->
       <y-offset-m archive="y"> 21.777 </y-offset-m> <!--Up-->
       <z-offset-m archive="y"> 39.163 </z-offset-m> <!--Back-->
+      <default-field-of-view-deg>50</default-field-of-view-deg>
     </config>
   </view>
 
@@ -86,10 +93,9 @@
       <y-offset-m archive="y">   6.337 </y-offset-m> <!-- Up    -->
       <z-offset-m archive="y"> -13.889 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg>-15</pitch-offset-deg>
+      <default-field-of-view-deg>70</default-field-of-view-deg>
     </config>
   </view>
-
-  <chase-distance-m type="double" archive="y">-100.0</chase-distance-m>
 
   <view n="1">
     <config>

@@ -1,12 +1,12 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<!-- <PropertyList include="h4-hercules-jsbsim-set.xml"> -->
-<PropertyList include="h4-hercules-yasim-set.xml">
+<!-- <PropertyList include="h4-hercules-jsbsim-cnf.xml"> -->
+<PropertyList include="h4-hercules-yasim-cnf.xml">
 
   <sim>
     <description>Hughes H4 Hercules</description>
     <author>Emmanuel BARANGER (3D/FDM), Benjamin DELRUE (3D), Pierre GEOFFROY (FDM Yasim)</author>
-    <status>Beta 0.9</status>
+    <status>1.0</status>
   </sim>
 
 </PropertyList>

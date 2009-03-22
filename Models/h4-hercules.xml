@@ -6,9 +6,18 @@
 
   <path>h4-hercules.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/H4-Hercules/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
+    <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>interieur</object-name>
     <object-name>ailes</object-name>
     <object-name>aileron-D</object-name>
     <object-name>aileron-G</object-name>
@@ -17,15 +26,22 @@
     <object-name>profondeur</object-name>
     <object-name>flap-G</object-name>
     <object-name>flap-D</object-name>
-    <object-name>flotteur-D</object-name>
-    <object-name>flotteur-G</object-name>
-    <object-name>moteurs</object-name>
-    <object-name>portantsG</object-name>
-    <object-name>portantsD</object-name>
+    <object-name>flotteurs</object-name>
     <object-name>porte-A-G</object-name>
     <object-name>porte-A-D</object-name>
 
     <!-- transparent objects -->
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
     <object-name>vitres</object-name>
     <object-name>lampe-D</object-name>
     <object-name>lampe-G</object-name>
@@ -40,6 +56,55 @@
     <object-name>lampe-G</object-name>
     <object-name>hublot-A-G</object-name>    
     <object-name>hublot-A-D</object-name>    
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileron-D</object-name>
+    <object-name>aileron-G</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>flap-G</object-name>
+    <object-name>flap-D</object-name>
+    <object-name>flotteurs</object-name>
+    <object-name>porte-A-G</object-name>
+    <object-name>porte-A-D</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
   </animation>
 
   <!-- Effets de vagues en particules -->
