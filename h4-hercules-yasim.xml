@@ -14,7 +14,7 @@
 
 <airplane mass="270066">
 
-  <approach speed="79" aoa="7" fuel="0.3">
+  <approach speed="78" aoa="8.2" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
@@ -149,7 +149,7 @@
   <!-- #0 engine -->
   <propeller x="8.637" y="26.156" z="6.702"
              mass="3870"
-             moment="110"
+             moment="10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -180,7 +180,7 @@
   <!-- #1 engine -->
   <propeller x="9.508" y="19.935" z="6.360"
              mass="3870"
-             moment="110"
+             moment="10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -211,7 +211,7 @@
   <!-- #2 engine -->
   <propeller x="9.992" y="13.786" z="5.835"
              mass="3870"
-             moment="110"
+             moment="10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -242,7 +242,7 @@
   <!-- #3 engine -->
   <propeller x="10.805" y="7.533" z="5.350"
              mass="3870"
-             moment="110"
+             moment="10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -273,7 +273,7 @@
   <!-- #4 engine -->
   <propeller x="8.637" y="-26.156" z="6.702"
              mass="3870"
-             moment="-110"
+             moment="-10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -304,7 +304,7 @@
   <!-- #5 engine -->
   <propeller x="9.508" y="-19.935" z="6.360"
              mass="3870"
-             moment="-110"
+             moment="-10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -335,7 +335,7 @@
   <!-- #6 engine -->
   <propeller x="9.992" y="-13.786" z="5.835"
              mass="3870"
-             moment="-110"
+             moment="-10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -366,7 +366,7 @@
   <!-- #7 engine -->
   <propeller x="10.805" y="-7.533" z="5.350"
              mass="3870"
-             moment="-110"
+             moment="-10"
              radius="2.615"
              cruise-speed="173"
              cruise-rpm="956"
@@ -396,7 +396,7 @@
 
   <!-- Main fuselage -->
   <!-- Noze -->
-  <gear x="16.796" y="0" z="-1.690"
+  <gear x="16.796" y="0" z="-0.690"
         compression="1.2"
         spring="15"
         damp="8"
@@ -410,7 +410,7 @@
   </gear>
 
   <!-- Center -->
-  <gear x="-5.572" y="0" z="-1.994"
+  <gear x="-5.572" y="0" z="-0.994"
         compression="2.4"
         spring="6"
         damp="8"
@@ -473,6 +473,7 @@
   <tank x="-0.789" y="-17.417" z="6.011" capacity="30000"/>
 
   <!-- CG Theorique : x=-0.261 y=0 z=5.031 -->
-  <ballast x="4" y="0.0" z="-10" mass="29000"/>
+  <ballast x="5" y="0" z="-10" mass="29000"/>
+  <ballast x="-6" y="0" z="10" mass="-29000"/>
 
 </airplane>
