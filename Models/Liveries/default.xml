@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-<sim>
+
+  <sim>
     <model>
-        <livery>
-            <name type="string">Default</name>
-            <texture>texture.png</texture>
+      <livery>
+        <name type="string">Default</name>
+        <texture>texture.png</texture>
 <!--
         <diffuse>
           <red>   0.5 </red>
@@ -37,7 +38,44 @@
 
         <shininess>10</shininess>
 -->
-        </livery>
+      </livery>
+      <livery-engine>
+        <name type="string">Default</name>
+        <texture>Engines/texture-e.png</texture>
+<!--
+        <diffuse>
+          <red>   0.5 </red>
+          <green> 0.5 </green>
+          <blue>  0.5 </blue>
+        </diffuse>
+
+        <ambient>
+          <red>   0.5 </red>
+          <green> 0.5 </green>
+          <blue>  0.5 </blue>
+        </ambient>
+-->
+        <specular>
+          <red>   0.3 </red>
+          <green> 0.3 </green>
+          <blue>  0.3 </blue>
+        </specular>
+
+        <emission>
+          <red>   0.2 </red>
+          <green> 0.2 </green>
+          <blue>  0.2 </blue>
+        </emission>
+<!--
+        <transparency>
+          <alpha> 0.0 </alpha>
+        </transparency>
+
+        <shininess>10</shininess>
+-->
+      </livery-engine>
     </model>
-</sim>
+  </sim>
+
 </PropertyList>
+

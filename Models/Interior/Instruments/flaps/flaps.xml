@@ -1,46 +1,57 @@
-<?xml version="1.0"?>
-
-<!-- OV-10 flap position indicator, by Dave Culp -->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
- <path>flaps.ac</path>
-
- <animation>
-  <type>material</type>
-  <object-name>face</object-name>
-  <object-name>needle</object-name>
-   <emission>
-     <red>0.6</red>
-     <green>0.3</green>
-     <blue>0.3</blue>
-    <factor-prop>controls/lighting/instruments-norm</factor-prop>
-   </emission> 
- </animation>  
+   <path>flaps.ac</path>
 
   <animation>
-  <type>rotate</type>
-  <object-name>needle</object-name>
-  <property>surface-positions/flap-pos-norm</property>
-  <factor>90</factor>
-  <center>
-   <x-m>  0.001 </x-m>
-   <y-m> -0.004 </y-m>
-   <z-m>  0.003 </z-m>
-  </center>
-  <axis>
-   <x> -1.000 </x>
-   <y>  0.000 </y>
-   <z>  0.000 </z>
-  </axis>
- </animation> 
+    <object-name>fond</object-name>
+    <object-name>needle</object-name>
+    <object-name>face</object-name>
 
+    <object-name>vitre</object-name>
+  </animation>
 
- <!-- *** LoD *** -->
- <animation>
-  <type>range</type>
-  <min-m>0</min-m>
-  <max-m>5</max-m>
- </animation>
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>needle</object-name>
+    <object-name>face</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 90 </factor>
+    <center>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.004 </y-m>
+      <z-m>  0.003 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation> 
 
 </PropertyList>
+

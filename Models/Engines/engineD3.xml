@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -9,20 +9,21 @@
     <object-name>interieur</object-name>
     <object-name>prise-air</object-name>
     <object-name>trappe-air</object-name>
+    <object-name>creux</object-name>
 
     <!-- transparent objects -->
   </animation>
 
-  <!-- Intérieur de l'avion -->
+  <!-- Hélice -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Engines/propellerR3.xml</path>
     <offsets>
       <x-m> -1.028 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.058 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 

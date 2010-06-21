@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Version           date                       Modèle
-     ==================================================================================================
+     ======================================================================================================================================================
      0.1               Octobre  2006              Ailes par Benjamin DELRUE
      0.3               Novembre 2006              Corps par BARANGER Emmanuel
      0.4               Novembre 2006              Cockpit, Flaps BARANGER Emmanuel
@@ -15,7 +15,8 @@
      0.8               Avril    2008              Fichiers images en PNG, réorganisation des moteurs
      0.9               Avril    2008              Nouveau FDM Yasim par Pierre GEOFFROY
      1.0               Mars     2009              Mise à jour des couleurs  
-     ==================================================================================================
+     1.1               Juin     2010              Update du FDM via le script de Melchior. Ajout des lumières et mise à jour des couleurs des instruments.
+     ======================================================================================================================================================
 -->
 
 <PropertyList>
@@ -57,6 +58,8 @@
         <int type="int">0</int>
         <int type="int">0</int>
         <int type="int">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
     </multiplay> 
 
@@ -64,11 +67,11 @@
       <title>Hughes H4 Hercules</title>
       <key>
         <name>d</name>
-        <desc>Open/Close crew door</desc>
+        <desc>Open/Close left door</desc>
       </key>
       <key>
         <name>D</name>
-        <desc>Open/Close passanger door</desc>
+        <desc>Open/Close right door</desc>
       </key>
     </help>
 
@@ -159,9 +162,12 @@
   </engines>
 
   <nasal>
-    <h4>
+    <doors>
       <file>Aircraft/H4-Hercules/Nasal/doors.nas</file>
+    </doors>
+    <h4>
       <file>Aircraft/H4-Hercules/Nasal/liveries.nas</file>
+      <file>Aircraft/H4-Hercules/Nasal/light.nas</file>
     </h4>
   </nasal>
 

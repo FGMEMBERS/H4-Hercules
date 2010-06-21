@@ -1,7 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Hughes H4 Hercules - 1946 -->
-
 <PropertyList>
 
   <path>h4-hercules.ac</path>
@@ -29,28 +28,10 @@
     <object-name>flotteurs</object-name>
     <object-name>porte-A-G</object-name>
     <object-name>porte-A-D</object-name>
+    <object-name>dessous</object-name>
+    <object-name>dessousflotteurs</object-name>
 
     <!-- transparent objects -->
-    <object-name>vitres</object-name>
-    <object-name>lampe-D</object-name>
-    <object-name>lampe-G</object-name>
-    <object-name>hublot-A-G</object-name>    
-    <object-name>hublot-A-D</object-name>    
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>lampe-D</object-name>
-    <object-name>lampe-G</object-name>
-    <object-name>hublot-A-G</object-name>    
-    <object-name>hublot-A-D</object-name>    
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
     <object-name>vitres</object-name>
     <object-name>lampe-D</object-name>
     <object-name>lampe-G</object-name>
@@ -72,6 +53,8 @@
     <object-name>flotteurs</object-name>
     <object-name>porte-A-G</object-name>
     <object-name>porte-A-D</object-name>
+    <object-name>dessous</object-name>
+    <object-name>dessousflotteurs</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -107,31 +90,25 @@
 -->
   </animation>
 
-  <!-- Effets de vagues en particules -->
-  <model>
-    <path>Aircraft/H4-Hercules/Models/Effects/waves.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model>
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </animation>
 
-  <!-- Intérieur de l'avion -->
-  <model>
-    <path>Aircraft/H4-Hercules/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> -7.676 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  5.637 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model>
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </animation>
 
   <!-- Moteur gauche d'extrémitée 1 -->
   <model>
@@ -140,9 +117,9 @@
       <x-m>  -8.475 </x-m>
       <y-m> -26.156 </y-m>
       <z-m>   6.831 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -153,9 +130,9 @@
       <x-m>  -9.326 </x-m>
       <y-m> -19.944 </y-m>
       <z-m>   6.497 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -166,9 +143,9 @@
       <x-m>  -9.830 </x-m>
       <y-m> -13.786 </y-m>
       <z-m>   5.964 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -179,9 +156,9 @@
       <x-m> -10.643 </x-m>
       <y-m>  -7.533 </y-m>
       <z-m>   5.479 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -192,9 +169,9 @@
       <x-m>  -8.475 </x-m>
       <y-m>  26.156 </y-m>
       <z-m>   6.831 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -205,9 +182,9 @@
       <x-m>  -9.326 </x-m>
       <y-m>  19.944 </y-m>
       <z-m>   6.497 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -218,9 +195,9 @@
       <x-m>  -9.830 </x-m>
       <y-m>  13.786 </y-m>
       <z-m>   5.964 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -231,9 +208,77 @@
       <x-m> -10.643 </x-m>
       <y-m>   7.533 </y-m>
       <z-m>   5.479 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>material</type>
+    <object-name>carter</object-name>
+    <object-name>prise-air</object-name>
+    <object-name>trappe-air</object-name>
+    <object-name>helice</object-name>
+    <object-name>bol</object-name>
+
+    <property-base>sim/model/livery-engine</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture-e.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Effets de vagues en particules -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Effects/waves.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Intérieur de l'avion -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> -7.676 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  5.637 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -242,7 +287,7 @@
     <type>rotate</type>
     <object-name>aileron-G</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor>-25.0</factor>
+    <factor> -25 </factor>
     <axis> 
       <x1-m>   3.949 </x1-m> 
       <y1-m> -26.421 </y1-m>
@@ -257,7 +302,7 @@
     <type>rotate</type>
     <object-name>aileron-D</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>-25.0</factor>
+    <factor> -25 </factor>
     <axis>
       <x1-m>   3.240 </x1-m>
       <y1-m>  47.631 </y1-m>
@@ -273,17 +318,16 @@
     <type>rotate</type>
     <object-name>profondeur</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor>25.0</factor>
-    <offset-deg>0</offset-deg>   
+    <factor> 25 </factor>
     <center> 
       <x-m> 39.210 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  8.000 </z-m>
     </center>
     <axis>
-      <x> 0.0 </x>
-      <y> 1.0 </y> 
-      <z> 0.0 </z>
+      <x> 0 </x>
+      <y> 1 </y> 
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -292,17 +336,16 @@
     <type>rotate</type>
     <object-name>direction</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor>20</factor>
-    <offset-deg>0</offset-deg>   
+    <factor> 20 </factor>
     <center>
       <x-m> 40.960 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> 14.171 </z-m>
     </center>
     <axis>
-       <x>  0.0 </x>
-       <y>  0.0 </y>
-       <z> -1.0 </z>
+       <x>  0 </x>
+       <y>  0 </y>
+       <z> -1 </z>
     </axis>
   </animation>
 
@@ -311,7 +354,7 @@
     <type>rotate</type>
     <object-name>flap-G</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-55.0</factor>
+    <factor> -55 </factor>
     <axis>
       <x1-m>   5.892 </x1-m>
       <y1-m>  -5.599 </y1-m>
@@ -326,7 +369,7 @@
     <type>rotate</type>
     <object-name>flap-D</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>55.0</factor>
+    <factor> 55 </factor>
     <axis>
       <x1-m>   5.892 </x1-m>
       <y1-m>   5.599 </y1-m>
@@ -342,16 +385,16 @@
     <object-name>porte-A-G</object-name>
     <object-name>hublot-A-G</object-name>    
     <property>instrumentation/doors/crew/position-norm</property>
-    <factor>-170</factor>
+    <factor> -170 </factor>
     <center>
       <x-m> -14.989 </x-m>
       <y-m>  -2.879 </y-m>
       <z-m>   1.395 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -360,17 +403,64 @@
     <object-name>porte-A-D</object-name>
     <object-name>hublot-A-D</object-name>    
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor>170</factor>
+    <factor> 170 </factor>
     <center>
       <x-m> -14.989 </x-m>
       <y-m>   2.879 </y-m>
       <z-m>   1.395 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 39.157 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 21.791 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  -0.430 </x-m>
+      <y-m> -48.747 </y-m>
+      <z-m>   8.439 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.430 </x-m>
+      <y-m> 48.747 </y-m>
+      <z-m>  8.439 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m>  -0.330 </x-m>
+      <y-m> -48.747 </y-m>
+      <z-m>   8.439 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -0.330 </x-m>
+      <y-m> 48.747 </y-m>
+      <z-m>  8.439 </z-m>
+    </offsets>
+  </model>
+
 </PropertyList>
+

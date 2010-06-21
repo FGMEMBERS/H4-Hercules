@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 
 <!-- Hughes H4 Hercules - 1946 -->
-
 <PropertyList>
 
   <path>panel.ac</path>
@@ -32,6 +31,7 @@
     <object-name>bouton3</object-name>
     <object-name>bouton4</object-name>
     <object-name>bouton5</object-name>
+    <object-name>trous</object-name>
 
     <!-- transparent objects -->
   </animation>
