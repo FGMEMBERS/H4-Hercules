@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Hughes H4 Hercules - 1946 -->
 
@@ -52,9 +52,7 @@
       <x-m> -0.249 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -64,9 +62,7 @@
       <x-m> -0.165 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+       <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -76,9 +72,7 @@
       <x-m> -0.080 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -88,9 +82,7 @@
       <x-m>  0.004 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -100,9 +92,7 @@
       <x-m>  0.088 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -112,9 +102,7 @@
       <x-m>  0.173 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -124,9 +112,7 @@
       <x-m>  0.257 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -136,9 +122,7 @@
       <x-m>  0.342 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.255 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -148,9 +132,7 @@
       <x-m> -0.249 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -160,76 +142,69 @@
       <x-m> -0.165 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre3.xml</path>
     <offsets>
       <x-m> -0.080 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre4.xml</path>
     <offsets>
       <x-m>  0.004 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre5.xml</path>
     <offsets>
       <x-m>  0.088 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre6.xml</path>
     <offsets>
       <x-m>  0.173 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre7.xml</path>
     <offsets>
       <x-m>  0.257 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
+
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre8.xml</path>
     <offsets>
       <x-m>  0.342 </x-m>
       <y-m> -0.049 </y-m>
       <z-m> -0.183 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
 </PropertyList>
+

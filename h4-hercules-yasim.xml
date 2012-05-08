@@ -467,13 +467,15 @@
         spring-factor-not-planing="0.7">
   </gear>
 
-  <tank x="-0.789" y="17.417" z="6.011" capacity="30000"/>
-<!-- <tank x="1.759" y="0" z="1.692" capacity="60000"/> -->
-  <tank x="1.759" y="0" z="1.692" capacity="0"/>
+  <tank x="-0.789" y=" 17.417" z="6.011" capacity="30000"/>
+<!--
+  <tank x=" 1.759" y="  0.000" z="1.692" capacity="60000"/>
+-->
+  <tank x=" 1.759" y="  0.000" z="1.692" capacity="0"/>
   <tank x="-0.789" y="-17.417" z="6.011" capacity="30000"/>
 
   <!-- CG Theorique : x=-0.261 y=0 z=5.031 -->
-  <ballast x="5" y="0" z="-10" mass="29000"/>
-  <ballast x="-6" y="0" z="10" mass="-29000"/>
+  <ballast x=" 5" y="0" z="-10" mass=" 29000"/>
+  <ballast x="-6" y="0" z=" 10" mass="-29000"/>
 
 </airplane>
