@@ -18,6 +18,7 @@
      1.1               Juin     2010              Update du FDM via le script de Melchior. Ajout des lumières et mise à jour des
                                                   couleurs des instruments.
      1.2               Mai      2012              Correction des entêtes xml
+     1.3               Mai      2013              Correction pour Rembrandt
      =================================================================================================================================
 -->
 
@@ -25,6 +26,11 @@
 
   <sim include="Nasal/views.xml">
 
+    <description>Hughes H4 Hercules (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Benjamin DELRUE (3D), Pierre GEOFFROY (FDM)</author>
+    <status>Dev</status>
+    <aircraft-version>1.3</aircraft-version>
+    
     <fuel-fraction>0.3</fuel-fraction>
 
     <startup>

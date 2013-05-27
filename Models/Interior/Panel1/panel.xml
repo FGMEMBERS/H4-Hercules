@@ -4,7 +4,7 @@
 
 <PropertyList>
 
-  <path>panel.ac</path>
+  <path>panel1.ac</path>
 
   <animation>
     <object-name>tableau3</object-name>
@@ -105,7 +105,7 @@
   </model>
 
   <model>
-    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/hdg/hdg-gauge.xml</path>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/hdg/hdg.xml</path>
     <offsets>
       <x-m>  0.019 </x-m>
       <y-m>  0.111 </y-m>

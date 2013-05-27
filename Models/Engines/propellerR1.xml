@@ -74,6 +74,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[4]/rpm</property>
+        <value> 10 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[4]/rpm</property>
     <factor> 1 </factor>
     <center>

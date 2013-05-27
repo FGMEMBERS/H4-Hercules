@@ -26,6 +26,15 @@
     <object-name>intvitres</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+  </effect>
+
   <!-- Panel du pilote -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Interior/Panel1/panel.xml</path>

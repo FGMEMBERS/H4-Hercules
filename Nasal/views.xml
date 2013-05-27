@@ -11,9 +11,9 @@
     <config>
       <from-model type="bool">true</from-model>
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-      <x-offset-m archive="y">   0.593 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">   6.498 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -13.600 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y">   0.58556 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">   6.35096 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.68172 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> 0 </pitch-offset-deg>
       <heading-offset-deg type="double"> 0 </heading-offset-deg> <!-- inside its window -->
       <default-field-of-view-deg> 70 </default-field-of-view-deg>
@@ -27,12 +27,12 @@
     <config>
       <from-model type="bool">true</from-model>
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-      <x-offset-m archive="y">  1.155 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  5.525 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y">-12.325 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -4 </pitch-offset-deg>
+      <x-offset-m archive="y">  1.22676 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  5.62667 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y">-12.34087 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -10 </pitch-offset-deg>
       <heading-offset-deg type="double"> 270 </heading-offset-deg> <!-- parallel to the panel -->
-      <default-field-of-view-deg> 50 </default-field-of-view-deg>
+      <default-field-of-view-deg> 55 </default-field-of-view-deg>
     </config>
   </view>
 
@@ -43,12 +43,12 @@
     <config>
       <from-model type="bool">true</from-model>
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-      <x-offset-m archive="y">  -0.922 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">   5.525 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -12.291 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -4 </pitch-offset-deg>
+      <x-offset-m archive="y">  -1.34370 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">   5.62667 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -12.29402 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -10 </pitch-offset-deg>
       <heading-offset-deg type="double"> 90 </heading-offset-deg> <!-- parallel to the panel -->
-      <default-field-of-view-deg> 50 </default-field-of-view-deg>
+      <default-field-of-view-deg> 55 </default-field-of-view-deg>
     </config>
   </view>
 
@@ -88,9 +88,9 @@
     <name>Pilot View</name>
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y">  -0.528 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">   6.337 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -13.889 </z-offset-m> <!-- Back  -->
+      <x-offset-m archive="y">  -0.58556 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">   6.35096 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -13.68172 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -15 </pitch-offset-deg>
       <default-field-of-view-deg> 70 </default-field-of-view-deg>
     </config>

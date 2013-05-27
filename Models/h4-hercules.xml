@@ -105,6 +105,36 @@
     <object-name>hublot-A-D</object-name>    
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </effect>
+
+  <!-- Intérieur de l'avion -->
+  <model>
+    <name>Interieur</name>
+    <path>Aircraft/H4-Hercules/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> -7.676 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  5.637 </z-m>
+    </offsets>
+  </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+
   <!-- Moteur gauche d'extrémitée 1 -->
   <model>
     <path>Aircraft/H4-Hercules/Models/Engines/engineG1.xml</path>
@@ -214,16 +244,6 @@
     <path>Aircraft/H4-Hercules/Models/Effects/waves/waves.xml</path>
   </model>
 
-  <!-- Intérieur de l'avion -->
-  <model>
-    <path>Aircraft/H4-Hercules/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> -7.676 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  5.637 </z-m>
-    </offsets>
-  </model>
-
   <!-- Animations des ailerons -->
   <animation>
     <type>rotate</type>
@@ -323,10 +343,29 @@
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>PorteGauche</name>
     <object-name>porte-A-G</object-name>
     <object-name>hublot-A-G</object-name>    
-    <property>instrumentation/doors/crew/position-norm</property>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>PorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -170 </factor>
     <center>
       <x-m> -14.989 </x-m>
@@ -341,10 +380,29 @@
   </animation>
 
   <animation>
-    <type>rotate</type>
+    <name>PorteDroite</name>
     <object-name>porte-A-D</object-name>
     <object-name>hublot-A-D</object-name>    
-    <property>instrumentation/doors/passenger/position-norm</property>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>PorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteDroite</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 170 </factor>
     <center>
       <x-m> -14.989 </x-m>
@@ -387,7 +445,7 @@
   </model>
 
   <model>
-    <path>Aircraft/H4-Hercules/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/H4-Hercules/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m>  -0.330 </x-m>
       <y-m> -48.747 </y-m>
@@ -396,7 +454,7 @@
   </model>
 
   <model>
-    <path>Aircraft/H4-Hercules/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/H4-Hercules/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -0.330 </x-m>
       <y-m> 48.747 </y-m>
@@ -405,4 +463,3 @@
   </model>
 
 </PropertyList>
-
