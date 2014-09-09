@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+<PropertyList>
+
+  <path>h4-hercules.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/H4-Hercules/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileron-D</object-name>
+    <object-name>aileron-G</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>flap-G</object-name>
+    <object-name>flap-D</object-name>
+    <object-name>flotteurs</object-name>
+    <object-name>porte-A-G</object-name>
+    <object-name>porte-A-D</object-name>
+    <object-name>dessous</object-name>
+    <object-name>dessousflotteurs</object-name>
+
+    <!-- transparent objects -->
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileron-D</object-name>
+    <object-name>aileron-G</object-name>
+    <object-name>derive</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>flap-G</object-name>
+    <object-name>flap-D</object-name>
+    <object-name>flotteurs</object-name>
+    <object-name>porte-A-G</object-name>
+    <object-name>porte-A-D</object-name>
+    <object-name>dessous</object-name>
+    <object-name>dessousflotteurs</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+    <object-name>lampe-D</object-name>
+    <object-name>lampe-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+    <object-name>hublot-A-D</object-name>    
+  </effect>
+
+  <!-- Intérieur de l'avion -->
+  <model>
+    <name>Interieur</name>
+    <path>Aircraft/H4-Hercules/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> -7.676 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  5.637 </z-m>
+    </offsets>
+  </model>
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+
+  <!-- Moteur gauche d'extrémitée 1 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineG1.xml</path>
+    <offsets>
+      <x-m>  -8.475 </x-m>
+      <y-m> -26.156 </y-m>
+      <z-m>   6.831 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur gauche intérieur gauche 2 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineG2.xml</path>
+    <offsets>
+      <x-m>  -9.326 </x-m>
+      <y-m> -19.944 </y-m>
+      <z-m>   6.497 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur gauche intérieur droit 3 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineG3.xml</path>
+    <offsets>
+      <x-m>  -9.830 </x-m>
+      <y-m> -13.786 </y-m>
+      <z-m>   5.964 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur gauche intérieur 4 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineG4.xml</path>
+    <offsets>
+      <x-m> -10.643 </x-m>
+      <y-m>  -7.533 </y-m>
+      <z-m>   5.479 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur droit d'extrémitée 5 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineD1.xml</path>
+    <offsets>
+      <x-m>  -8.475 </x-m>
+      <y-m>  26.156 </y-m>
+      <z-m>   6.831 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur droit intérieur droit 6 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineD2.xml</path>
+    <offsets>
+      <x-m>  -9.326 </x-m>
+      <y-m>  19.944 </y-m>
+      <z-m>   6.497 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur droit intérieur gauche 7 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineD3.xml</path>
+    <offsets>
+      <x-m>  -9.830 </x-m>
+      <y-m>  13.786 </y-m>
+      <z-m>   5.964 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Moteur droit intérieur 8 -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Engines/engineD4.xml</path>
+    <offsets>
+      <x-m> -10.643 </x-m>
+      <y-m>   7.533 </y-m>
+      <z-m>   5.479 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>material</type>
+    <object-name>carter</object-name>
+    <object-name>prise-air</object-name>
+    <object-name>trappe-air</object-name>
+    <object-name>helice</object-name>
+    <object-name>bol</object-name>
+
+    <property-base>sim/model/livery-engine</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture-e.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <!-- Effets de vagues en particules -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Effects/waves/waves.xml</path>
+  </model>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileron-G</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -25 </factor>
+    <axis> 
+      <x1-m>   3.949 </x1-m> 
+      <y1-m> -26.421 </y1-m>
+      <z1-m>   6.718 </z1-m>
+      <x2-m>   3.240 </x2-m>
+      <y2-m> -47.631 </y2-m> 
+      <z2-m>   8.182 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileron-D</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m>   3.240 </x1-m>
+      <y1-m>  47.631 </y1-m>
+      <z1-m>   8.182 </z1-m>
+      <x2-m>   3.949 </x2-m>
+      <y2-m>  26.421 </y2-m>
+      <z2-m>   6.718 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+ <animation>
+    <type>rotate</type>
+    <object-name>profondeur</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 25 </factor>
+    <center> 
+      <x-m> 39.210 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  8.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y> 
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>direction</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 20 </factor>
+    <center>
+      <x-m> 40.960 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 14.171 </z-m>
+    </center>
+    <axis>
+       <x>  0 </x>
+       <y>  0 </y>
+       <z> -1 </z>
+    </axis>
+  </animation>
+
+  <!-- Volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>flap-G</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> -55 </factor>
+    <axis>
+      <x1-m>   5.892 </x1-m>
+      <y1-m>  -5.599 </y1-m>
+      <z1-m>   3.471 </z1-m>
+      <x2-m>   4.660 </x2-m>
+      <y2-m> -23.766 </y2-m>
+      <z2-m>   4.832 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>flap-D</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>   5.892 </x1-m>
+      <y1-m>   5.599 </y1-m>
+      <z1-m>   3.471 </z1-m>
+      <x2-m>   4.660 </x2-m>
+      <y2-m>  23.766 </y2-m>
+      <z2-m>   4.832 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>PorteGauche</name>
+    <object-name>porte-A-G</object-name>
+    <object-name>hublot-A-G</object-name>    
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>PorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> -170 </factor>
+    <center>
+      <x-m> -14.989 </x-m>
+      <y-m>  -2.879 </y-m>
+      <z-m>   1.395 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>PorteDroite</name>
+    <object-name>porte-A-D</object-name>
+    <object-name>hublot-A-D</object-name>    
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>PorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteDroite</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 170 </factor>
+    <center>
+      <x-m> -14.989 </x-m>
+      <y-m>   2.879 </y-m>
+      <z-m>   1.395 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 39.157 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> 21.791 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  -0.430 </x-m>
+      <y-m> -48.747 </y-m>
+      <z-m>   8.439 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.430 </x-m>
+      <y-m> 48.747 </y-m>
+      <z-m>  8.439 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -0.330 </x-m>
+      <y-m> -48.747 </y-m>
+      <z-m>   8.439 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -0.330 </x-m>
+      <y-m> 48.747 </y-m>
+      <z-m>  8.439 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

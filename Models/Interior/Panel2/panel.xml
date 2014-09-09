@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+<PropertyList>
+
+  <path>panel2.ac</path>
+
+  <animation>
+    <object-name>manettes</object-name>
+    <object-name>tableau6</object-name>
+    <object-name>tableau7</object-name>
+    <object-name>soustableau7</object-name>
+    <object-name>manette1-pilote</object-name>
+    <object-name>manette2-pilote</object-name>
+    <object-name>manette3-pilote</object-name>
+    <object-name>manette4-pilote</object-name>
+    <object-name>manette5-pilote</object-name>
+    <object-name>manette6-pilote</object-name>
+    <object-name>manette7-pilote</object-name>
+    <object-name>manette8-pilote</object-name>
+    <object-name>manette1-copilote</object-name>
+    <object-name>manette2-copilote</object-name>
+    <object-name>manette3-copilote</object-name>
+    <object-name>manette4-copilote</object-name>
+    <object-name>manette5-copilote</object-name>
+    <object-name>manette6-copilote</object-name>
+    <object-name>manette7-copilote</object-name>
+    <object-name>manette8-copilote</object-name>
+    <object-name>bouton1</object-name>
+    <object-name>bouton2</object-name>
+    <object-name>bouton3</object-name>
+    <object-name>bouton4</object-name>
+    <object-name>bouton5</object-name>
+    <object-name>trous</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+  <!-- Zones de clique souris -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Panel2/Mouse/zone.xml</path>
+  </model>
+
+  <!-- Manettes des gaz N°1 (pilote et copilote) -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette1-pilote</object-name>
+    <object-name>manette1-copilote</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°2 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette2-pilote</object-name>
+    <object-name>manette2-copilote</object-name>
+    <property>controls/engines/engine[1]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°3 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette3-pilote</object-name>
+    <object-name>manette3-copilote</object-name>
+    <property>controls/engines/engine[2]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°4 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette4-pilote</object-name>
+    <object-name>manette4-copilote</object-name>
+    <property>controls/engines/engine[3]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°5 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette5-pilote</object-name>
+    <object-name>manette5-copilote</object-name>
+    <property>controls/engines/engine[4]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°6 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette6-pilote</object-name>
+    <object-name>manette6-copilote</object-name>
+    <property>controls/engines/engine[5]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°7 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette7-pilote</object-name>
+    <object-name>manette7-copilote</object-name>
+    <property>controls/engines/engine[6]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Manettes des gaz N°8 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>manette8-pilote</object-name>
+    <object-name>manette8-copilote</object-name>
+    <property>controls/engines/engine[7]/throttle</property>
+    <factor> 80 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
+

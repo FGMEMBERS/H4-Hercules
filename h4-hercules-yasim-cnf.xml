@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="h4-hercules-base.xml">
+
+  <sim>
+
+    <description>Hughes H4 Hercules (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Benjamin DELRUE (3D), Pierre GEOFFROY (FDM)</author>
+    <status>Dev</status>
+    <aircraft-version>1.3</aircraft-version>
+    <flight-model>yasim</flight-model>
+    <aero>h4-hercules-yasim</aero>
+
+  </sim>
+ 
+</PropertyList>

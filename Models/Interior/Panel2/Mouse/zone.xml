@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>zone.ac</path>
+
+  <animation>
+    <object-name>AllUpPilote</object-name>
+    <object-name>AllDownPilote</object-name>
+    <object-name>AllUpCopilote</object-name>
+    <object-name>AllDownCopilote</object-name>
+    <object-name>Up0Pilote</object-name>
+    <object-name>Up1Pilote</object-name>
+    <object-name>Up2Pilote</object-name>
+    <object-name>Up3Pilote</object-name>
+    <object-name>Up4Pilote</object-name>
+    <object-name>Up5Pilote</object-name>
+    <object-name>Up6Pilote</object-name>
+    <object-name>Up7Pilote</object-name>
+    <object-name>Down0Pilote</object-name>
+    <object-name>Down1Pilote</object-name>
+    <object-name>Down2Pilote</object-name>
+    <object-name>Down3Pilote</object-name>
+    <object-name>Down4Pilote</object-name>
+    <object-name>Down5Pilote</object-name>
+    <object-name>Down6Pilote</object-name>
+    <object-name>Down7Pilote</object-name>
+    <object-name>Up0Copilote</object-name>
+    <object-name>Up1Copilote</object-name>
+    <object-name>Up2Copilote</object-name>
+    <object-name>Up3Copilote</object-name>
+    <object-name>Up4Copilote</object-name>
+    <object-name>Up5Copilote</object-name>
+    <object-name>Up6PCoplote</object-name>
+    <object-name>Up7Copilote</object-name>
+    <object-name>Down0Copilote</object-name>
+    <object-name>Down1Copilote</object-name>
+    <object-name>Down2Copilote</object-name>
+    <object-name>Down3Copilote</object-name>
+    <object-name>Down4Copilote</object-name>
+    <object-name>Down5Copilote</object-name>
+    <object-name>Down6Copilote</object-name>
+    <object-name>Down7Copilote</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up0Pilote</object-name>
+    <object-name>Up0Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up1Pilote</object-name>
+    <object-name>Up1Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up2Pilote</object-name>
+    <object-name>Up2Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[2]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up3Pilote</object-name>
+    <object-name>Up3Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[3]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up4Pilote</object-name>
+    <object-name>Up4Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[4]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up5Pilote</object-name>
+    <object-name>Up5Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[5]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up6Pilote</object-name>
+    <object-name>Up6Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[6]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Up7Pilote</object-name>
+    <object-name>Up7Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[7]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down0Pilote</object-name>
+    <object-name>Down0Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down1Pilote</object-name>
+    <object-name>Down1Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down2Pilote</object-name>
+    <object-name>Down2Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[2]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down3Pilote</object-name>
+    <object-name>Down3Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[3]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down4Pilote</object-name>
+    <object-name>Down4Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[4]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down5Pilote</object-name>
+    <object-name>Down5Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[5]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down6Pilote</object-name>
+    <object-name>Down6Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[6]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>Down7Pilote</object-name>
+    <object-name>Down7Copilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[7]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>AllUpPilote</object-name>
+    <object-name>AllUpCopilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[2]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[3]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[4]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[5]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[6]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[7]/throttle</property>
+        <step type="double">0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>AllDownPilote</object-name>
+    <object-name>AllDownCopilote</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[2]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[3]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[4]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[5]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[6]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[7]/throttle</property>
+        <step type="double">-0.05</step>
+      </binding>          
+    </action>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>table.ac</path>
+
+  <animation>
+    <object-name>tableradio</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+</PropertyList>
+
+

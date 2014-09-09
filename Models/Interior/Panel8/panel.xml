@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>panel8.ac</path>
+
+  <animation>
+    <object-name>tableau</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+ 
+</PropertyList>

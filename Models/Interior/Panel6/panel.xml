@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>panel6.ac</path>
+
+  <animation>
+    <object-name>tableau1</object-name>
+    <object-name>tableau2</object-name>
+    <object-name>bouton1</object-name>
+    <object-name>bouton2</object-name>
+    <object-name>bouton3</object-name>
+    <object-name>bouton4</object-name>
+    <object-name>bouton5</object-name>
+    <object-name>bouton6</object-name>
+    <object-name>bouton7</object-name>
+    <object-name>bouton8</object-name>
+    <object-name>bouton9</object-name>
+    <object-name>bouton10</object-name>
+    <object-name>bouton11</object-name>
+    <object-name>bouton12</object-name>
+    <object-name>bouton13</object-name>
+    <object-name>bouton14</object-name>
+    <object-name>bouton15</object-name>
+    <object-name>bouton16</object-name>
+    <object-name>bouton17</object-name>
+    <object-name>bouton18</object-name>
+    <object-name>bouton19</object-name>
+    <object-name>bouton20</object-name>
+    <object-name>bouton21</object-name>
+    <object-name>bouton22</object-name>
+    <object-name>bouton23</object-name>
+    <object-name>bouton24</object-name>
+    <object-name>bouton25</object-name>
+    <object-name>bouton26</object-name>
+    <object-name>bouton27</object-name>
+    <object-name>bouton28</object-name>
+    <object-name>bouton29</object-name>
+    <object-name>bouton30</object-name>
+    <object-name>bouton31</object-name>
+    <object-name>bouton32</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+  <!-- Panneau des moteurs -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter1.xml</path>
+    <offsets>
+      <x-m> -0.249 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter2.xml</path>
+    <offsets>
+      <x-m> -0.165 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+       <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter3.xml</path>
+    <offsets>
+      <x-m> -0.080 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter4.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter5.xml</path>
+    <offsets>
+      <x-m>  0.088 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter6.xml</path>
+    <offsets>
+      <x-m>  0.173 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter7.xml</path>
+    <offsets>
+      <x-m>  0.257 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Tachimeter/tachimeter8.xml</path>
+    <offsets>
+      <x-m>  0.342 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.255 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre1.xml</path>
+    <offsets>
+      <x-m> -0.249 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre2.xml</path>
+    <offsets>
+      <x-m> -0.165 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre3.xml</path>
+    <offsets>
+      <x-m> -0.080 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre4.xml</path>
+    <offsets>
+      <x-m>  0.004 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre5.xml</path>
+    <offsets>
+      <x-m>  0.088 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre6.xml</path>
+    <offsets>
+      <x-m>  0.173 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre7.xml</path>
+    <offsets>
+      <x-m>  0.257 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/manometre/manometre8.xml</path>
+    <offsets>
+      <x-m>  0.342 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m> -0.183 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+<PropertyList>
+
+  <path>bar.ac</path>
+
+  <animation>
+    <object-name>bar1</object-name>
+    <object-name>bar2</object-name>
+    <object-name>bar3</object-name>
+    <object-name>bar4</object-name>
+    <object-name>bar5</object-name>
+    <object-name>bar6</object-name>
+    <object-name>bar7</object-name>
+    <object-name>liquides</object-name>
+
+    <!-- transparent objects -->
+    <object-name>verres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verres</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>verres</object-name>
+  </effect>
+
+  <animation>
+    <type>pick</type>
+    <object-name>bar2</object-name>
+    <object-name>bar3</object-name>
+    <object-name>bar4</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.bar.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>bar2</object-name>
+    <property>sim/model/door-positions/bar/position-norm</property>
+    <factor> 40 </factor>
+    <axis> 
+      <x1-m>  0.152290 </x1-m> 
+      <y1-m>  0.007509 </y1-m>
+      <z1-m>  0.160020 </z1-m>
+      <x2-m> -0.151980 </x2-m>
+      <y2-m>  0.001125 </y2-m> 
+      <z2-m>  0.159280 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bar3</object-name>
+    <property>sim/model/door-positions/bar/position-norm</property>
+    <factor> 105 </factor>
+    <center> 
+      <x-m>  0.150000 </x-m>
+      <y-m> -0.162680 </y-m>
+      <z-m> -0.007608 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y> 
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bar4</object-name>
+    <property>sim/model/door-positions/bar/position-norm</property>
+    <factor> -105 </factor>
+    <center> 
+      <x-m> -0.154990 </x-m>
+      <y-m> -0.158650 </y-m>
+      <z-m> -0.007608 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y> 
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Hughes H4 Hercules - 1946 -->
+
+<PropertyList>
+
+  <path>panel4.ac</path>
+
+  <animation>
+    <object-name>tableau1</object-name>
+    <object-name>tableau2</object-name>
+
+    <!-- transparent objects -->
+  </animation>
+
+  <!-- Les différents instruments -->
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.021 </x-m>
+      <y-m> 0.067 </y-m>
+      <z-m> 0.019 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/Altimeter/altimeter.xml</path>
+    <offsets>
+      <x-m> 0.021 </x-m>
+      <y-m> 0.017 </y-m>
+      <z-m> 0.069 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <x-m>  0.021 </x-m>
+      <y-m> -0.083 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/AirSpeed/airspeed.xml</path>
+    <offsets>
+      <x-m>  0.021 </x-m>
+      <y-m> -0.033 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/compas/compas.xml</path>
+    <offsets>
+      <x-m> 0.021 </x-m>
+      <y-m> 0.067 </y-m>
+      <z-m> 0.069 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m> 0.021 </x-m>
+      <y-m> 0.157 </y-m>
+      <z-m> 0.059 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/H4-Hercules/Models/Interior/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.021 </x-m>
+      <y-m> 0.017 </y-m>
+      <z-m> 0.019 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
